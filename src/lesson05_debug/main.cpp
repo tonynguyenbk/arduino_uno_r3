@@ -1,5 +1,5 @@
 // BÀI 5 - BẢN DEBUG: giống hệt bài 5 nhưng dùng debugger avr-stub thay cho Serial.
-// Chạy: chọn env:bai05_debug -> mở Run and Debug (Ctrl+Shift+D) -> F5.
+// Chạy: chọn env:lesson05_debug -> mở Run and Debug (Ctrl+Shift+D) -> F5.
 // Debugger chiếm cổng Serial nên KHÔNG được dùng Serial.print trong file này.
 // Debugger dùng chân 3 (AVR8_SWINT_SOURCE=1 trong platformio.ini): không cắm gì vào chân 3.
 //

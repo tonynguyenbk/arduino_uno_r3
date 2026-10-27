@@ -3,8 +3,11 @@
 Công cụ: VS Code + PlatformIO. Board ở cổng `COM5` (khai báo trong `platformio.ini`; COM4 trên máy này là webcam).
 
 ## Cách nạp một bài
-- **Cách 1 (bấm nút):** thanh trạng thái dưới cùng VS Code → chọn env (vd `env:bai01`) → bấm mũi tên **→ (Upload)**. Bấm biểu tượng **ổ cắm (Serial Monitor)** để xem dữ liệu board gửi lên.
-- **Cách 2 (lệnh):** bấm nút `>_` (PlatformIO Core CLI) trên thanh trạng thái để mở terminal, rồi gõ `pio run -e bai01 -t upload` và `pio device monitor`
+- **Cách 1 (bấm nút):** thanh trạng thái dưới cùng VS Code → chọn env (vd `env:lesson01`) → bấm mũi tên **→ (Upload)**. Bấm biểu tượng **ổ cắm (Serial Monitor)** để xem dữ liệu board gửi lên.
+- **Cách 2 (lệnh):** bấm nút `>_` (PlatformIO Core CLI) trên thanh trạng thái để mở terminal, rồi gõ `pio run -e lesson01 -t upload` và `pio device monitor`
+
+**Mỗi bài một thư mục** `src/lessonNN_*/`: code `main.cpp`, ảnh sơ đồ nối dây `*.svg`, và nếu có mô phỏng thì `wokwi.toml` + `diagram.json`.
+Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `Ctrl+Shift+P` → **Wokwi: Select Config File** → chọn `wokwi.toml` của bài → **Wokwi: Start Simulator**.
 
 **Lưu ý**
 - Mỗi lần mở Serial Monitor, nội dung được lưu vào file `logs/device-monitor-*.log`.
