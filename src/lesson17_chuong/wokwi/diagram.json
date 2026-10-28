@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "tonynguyenbk",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-buzzer", "id": "bz1", "top": 30, "left": 300, "attrs": { "volume": "0.2" } },
+    { "type": "wokwi-pushbutton-6mm", "id": "btn1", "top": 195, "left": 300, "attrs": { "color": "green" } }
+  ],
+  "connections": [
+    [ "uno:8", "bz1:2", "orange", [ "h103.9" ] ],
+    [ "uno:GND.1", "bz1:1", "black", [ "h70", "v40.6", "h23.9" ] ],
+    [ "uno:2", "btn1:1.l", "gold", [ "h40", "v-7.2" ] ],
+    [ "btn1:2.l", "uno:GND.3", "black", [ "v40", "h-289.4", "v-109.1" ] ]
+  ],
+  "dependencies": {}
+}

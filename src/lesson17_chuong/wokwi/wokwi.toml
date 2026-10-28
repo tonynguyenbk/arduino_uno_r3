@@ -1,0 +1,7 @@
+# Mô phỏng bài 17 bằng Wokwi. Build env lesson17 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Bật loa máy tính: Wokwi phát được âm thanh của chuông.
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson17/firmware.hex'
+elf = '../../../.pio/build/lesson17/firmware.elf'

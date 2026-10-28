@@ -36,7 +36,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 14. [x] Động cơ bước 28BYJ-48 + ULN2003 — thư viện Stepper, vùng chết, `long` *(mô phỏng ✓ với động cơ 200 bước, chưa cắm thật — đổi `BUOC_MOI_VONG` thành 2048)*
 15. [x] Động cơ DC + L298N — cầu H, PWM tốc độ, tăng/giảm tốc từ từ *(mô phỏng bằng LED, chưa cắm thật)*
 16. [x] Máy trạng thái (state machine) — đèn giao thông ngã tư, `enum`, `switch`, mảng 2 chiều, giám sát an toàn *(mô phỏng ✓, chưa cắm thật)*
-17. [ ] Chuông (buzzer) — `tone()`, chuông chủ động / thụ động, giai điệu bằng mảng
+17. [x] Chuông (buzzer) — `tone()`, chuông chủ động / thụ động, giai điệu bằng mảng *(mô phỏng ✓, chưa cắm thật)*
 18. [ ] Joystick — 2 trục analog + nút, vùng chết
 19. [ ] Cảm biến nước — ngưỡng có trễ, chống ăn mòn
 20. [ ] Remote hồng ngoại — giao thức NEC, thư viện IRremote
