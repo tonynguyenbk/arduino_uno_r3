@@ -1,0 +1,7 @@
+# Mô phỏng bài 20 bằng Wokwi. Build env lesson20 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Bấm chuột vào các nút trên remote; remote "chiếu" vào mắt thu trong mạch.
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson20/firmware.hex'
+elf = '../../../.pio/build/lesson20/firmware.elf'
