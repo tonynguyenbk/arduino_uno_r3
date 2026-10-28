@@ -1,0 +1,6 @@
+# Mô phỏng bài 8 bằng Wokwi (mạch giống bài 7A). Build env lesson08 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson08/firmware.hex'
+elf = '../../../.pio/build/lesson08/firmware.elf'

@@ -24,7 +24,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 5. [x] `millis()` thay `delay()` — làm nhiều việc cùng lúc
 6. [x] PWM — làm mờ LED với `analogWrite`
 7. [x] Đọc analog — biến trở / LDR, `analogRead`, `map()`, `constrain()` *(7B quang trở: mới mô phỏng, chưa cắm thật)*
-8. [ ] Hàm, mảng — tổ chức code gọn gàng
+8. [x] Hàm, mảng — tổ chức code gọn gàng, bảng tra gamma (nhanh hơn `pow()` ~460 lần)
 
 ### Phần 2 — Linh kiện ngoại vi
 9. [ ] LED 7 đoạn
