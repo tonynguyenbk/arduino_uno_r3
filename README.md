@@ -6,7 +6,7 @@ Công cụ: VS Code + PlatformIO. Board ở cổng `COM5` (khai báo trong `plat
 - **Cách 1 (bấm nút):** thanh trạng thái dưới cùng VS Code → chọn env (vd `env:lesson01`) → bấm mũi tên **→ (Upload)**. Bấm biểu tượng **ổ cắm (Serial Monitor)** để xem dữ liệu board gửi lên.
 - **Cách 2 (lệnh):** bấm nút `>_` (PlatformIO Core CLI) trên thanh trạng thái để mở terminal, rồi gõ `pio run -e lesson01 -t upload` và `pio device monitor`
 
-**Mỗi bài một thư mục** `src/lessonNN_*/`: code `main.cpp`, ảnh sơ đồ nối dây `*.svg`, và nếu có mô phỏng thì `wokwi.toml` + `diagram.json`.
+**Mỗi bài một thư mục** `src/lessonNN_*/`: code `main.cpp`, ảnh sơ đồ nối dây (`so_do*.png` chụp từ Wokwi, hoặc `*.svg`), và nếu có mô phỏng thì `wokwi.toml` + `diagram.json`.
 Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `Ctrl+Shift+P` → **Wokwi: Select Config File** → chọn `wokwi.toml` của bài → **Wokwi: Start Simulator**.
 
 **Lưu ý**
@@ -23,7 +23,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 4. [x] Nút nhấn — `digitalRead`, `INPUT_PULLUP`, chống dội phím
 5. [x] `millis()` thay `delay()` — làm nhiều việc cùng lúc
 6. [x] PWM — làm mờ LED với `analogWrite`
-7. [ ] Đọc analog — biến trở / LDR, `analogRead`, `map()`
+7. [x] Đọc analog — biến trở / LDR, `analogRead`, `map()`, `constrain()` *(7B quang trở: mới mô phỏng, chưa cắm thật)*
 8. [ ] Hàm, mảng — tổ chức code gọn gàng
 
 ### Phần 2 — Linh kiện ngoại vi
