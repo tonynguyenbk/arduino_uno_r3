@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "author": "tonynguyenbk",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-buzzer", "id": "bz1", "top": 50, "left": 280, "attrs": { "volume": "0.2" } },
+    { "type": "wokwi-led", "id": "ledDo", "top": 100, "left": 340, "attrs": { "color": "red", "label": "Tu choi" } },
+    { "type": "wokwi-led", "id": "ledXanh", "top": 100, "left": 400, "attrs": { "color": "limegreen", "label": "Mo cua" } },
+    { "type": "wokwi-pushbutton-6mm", "id": "theChu", "top": 300, "left": 40, "attrs": { "color": "blue", "label": "The chu" } },
+    { "type": "wokwi-pushbutton-6mm", "id": "theA", "top": 300, "left": 100, "attrs": { "color": "green", "label": "The A" } },
+    { "type": "wokwi-pushbutton-6mm", "id": "theB", "top": 300, "left": 160, "attrs": { "color": "red", "label": "The B" } }
+  ],
+  "connections": [
+    [ "uno:8", "bz1:2", "orange", [ "h83.9" ] ],
+    [ "uno:5", "ledDo:A", "red", [ "h131.9" ] ],
+    [ "uno:4", "ledXanh:A", "green", [ "h191.9" ] ],
+    [ "uno:GND.1", "bz1:1", "black", [ "h60", "v66.6", "h13.9" ] ],
+    [ "bz1:1", "ledDo:C", "black", [ "v16", "h48" ] ],
+    [ "ledDo:C", "ledXanh:C", "black", [ "v8", "h60" ] ],
+
+    [ "uno:A1", "theChu:1.l", "blue", [ "h-46.6", "v94.6", "h36" ] ],
+    [ "uno:A2", "theA:1.l", "green", [ "h-38.6", "v70.1", "h88" ] ],
+    [ "uno:A3", "theB:1.l", "red", [ "h-30.6", "v45.6", "h140" ] ],
+    [ "theChu:2.l", "theA:2.l", "black", [ "v15", "h60" ] ],
+    [ "theA:2.l", "theB:2.l", "black", [ "v15", "h60" ] ],
+    [ "theChu:2.l", "uno:GND.3", "black", [ "v25", "h-44", "v-199.1" ] ]
+  ],
+  "dependencies": {}
+}

@@ -1,0 +1,7 @@
+# Mô phỏng bài 22 bằng Wokwi. Build env lesson22 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Wokwi không có đầu đọc RC522 -> 3 nút giả lập quẹt thẻ: xanh dương = thẻ chủ, xanh lá = thẻ A, đỏ = thẻ B.
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson22/firmware.hex'
+elf = '../../../.pio/build/lesson22/firmware.elf'
