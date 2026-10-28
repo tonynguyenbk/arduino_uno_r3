@@ -7,6 +7,7 @@ Công cụ: VS Code + PlatformIO. Board ở cổng `COM5` (khai báo trong `plat
 - **Cách 2 (lệnh):** bấm nút `>_` (PlatformIO Core CLI) trên thanh trạng thái để mở terminal, rồi gõ `pio run -e lesson01 -t upload` và `pio device monitor`
 
 **Mỗi bài một thư mục** `src/lessonNN_*/`: code `main.cpp`, ảnh sơ đồ nối dây (`so_do*.png` chụp từ Wokwi, hoặc `*.svg`), và nếu có mô phỏng thì `wokwi.toml` + `diagram.json`.
+File `README.md` của mỗi bài: ứng dụng thực tế (phần cứng dùng ở đâu, kiến thức trong hệ thống nhúng, dự án công nghiệp/thương mại), lỗi thường gặp, bài tập mở rộng, từ khóa + mục datasheet, câu hỏi phỏng vấn.
 Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `Ctrl+Shift+P` → **Wokwi: Select Config File** → chọn `wokwi.toml` của bài → **Wokwi: Start Simulator**.
 
 **Lưu ý**
