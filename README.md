@@ -27,7 +27,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 8. [x] Hàm, mảng — tổ chức code gọn gàng, bảng tra gamma (nhanh hơn `pow()` ~460 lần)
 
 ### Phần 2 — Linh kiện ngoại vi
-9. [ ] LED 7 đoạn
+9. [x] LED 7 đoạn 5611AH — mảng chữ số, `bitRead` *(mô phỏng ✓, chưa cắm thật)*
 10. [ ] Cảm biến siêu âm HC-SR04 — `pulseIn`
 11. [ ] DHT11 — dùng thư viện
 12. [ ] LCD 1602 / OLED qua I2C

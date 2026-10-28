@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" font-family="Arial, sans-serif">
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="34" font-size="20" font-weight="bold" fill="#111" text-anchor="middle">LED 7 đoạn 5611AH — cathode chung (nhìn từ MẶT TRƯỚC)</text>
+
+  <!-- chân trên: 10 9 8 7 6 -->
+  <g font-size="13" text-anchor="middle">
+    <rect x="96" y="70" width="8" height="40" fill="#bbb"/><text x="100" y="62">10</text><text x="100" y="128" font-weight="bold" fill="#0e5aa7">g</text>
+    <rect x="146" y="70" width="8" height="40" fill="#bbb"/><text x="150" y="62">9</text><text x="150" y="128" font-weight="bold" fill="#0e5aa7">f</text>
+    <rect x="196" y="70" width="8" height="40" fill="#bbb"/><text x="200" y="62">8</text><text x="200" y="128" font-weight="bold" fill="#111">CHUNG</text>
+    <rect x="246" y="70" width="8" height="40" fill="#bbb"/><text x="250" y="62">7</text><text x="250" y="128" font-weight="bold" fill="#0e5aa7">a</text>
+    <rect x="296" y="70" width="8" height="40" fill="#bbb"/><text x="300" y="62">6</text><text x="300" y="128" font-weight="bold" fill="#0e5aa7">b</text>
+  </g>
+  <!-- thân -->
+  <rect x="70" y="140" width="260" height="300" rx="6" fill="#222" stroke="#000"/>
+  <!-- các thanh -->
+  <g fill="#ff3b3b" stroke="#a00">
+    <polygon points="135,170 265,170 250,185 150,185"/>                 <!-- a -->
+    <polygon points="270,175 270,285 255,275 255,190"/>                 <!-- b -->
+    <polygon points="270,300 270,410 255,395 255,310"/>                 <!-- c -->
+    <polygon points="135,415 265,415 250,400 150,400"/>                 <!-- d -->
+    <polygon points="130,300 130,410 145,395 145,310"/>                 <!-- e -->
+    <polygon points="130,175 130,285 145,275 145,190"/>                 <!-- f -->
+    <polygon points="140,292 150,284 250,284 260,292 250,300 150,300"/>  <!-- g -->
+    <circle cx="295" cy="410" r="9"/>                                    <!-- DP -->
+  </g>
+  <g font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">
+    <text x="200" y="207">a</text><text x="235" y="240">b</text><text x="235" y="360">c</text>
+    <text x="200" y="393">d</text><text x="165" y="360">e</text><text x="165" y="240">f</text>
+    <text x="200" y="325">g</text><text x="295" y="435" font-size="13">DP</text>
+  </g>
+  <!-- chân dưới: 1 2 3 4 5 -->
+  <g font-size="13" text-anchor="middle">
+    <rect x="96" y="440" width="8" height="40" fill="#bbb"/><text x="100" y="498">1</text><text x="100" y="518" font-weight="bold" fill="#0e5aa7">e</text>
+    <rect x="146" y="440" width="8" height="40" fill="#bbb"/><text x="150" y="498">2</text><text x="150" y="518" font-weight="bold" fill="#0e5aa7">d</text>
+    <rect x="196" y="440" width="8" height="40" fill="#bbb"/><text x="200" y="498">3</text><text x="200" y="518" font-weight="bold" fill="#111">CHUNG</text>
+    <rect x="246" y="440" width="8" height="40" fill="#bbb"/><text x="250" y="498">4</text><text x="250" y="518" font-weight="bold" fill="#0e5aa7">c</text>
+    <rect x="296" y="440" width="8" height="40" fill="#bbb"/><text x="300" y="498">5</text><text x="300" y="518" font-weight="bold" fill="#0e5aa7">DP</text>
+  </g>
+
+  <!-- giải thích -->
+  <g font-size="15" fill="#222">
+    <text x="400" y="90" font-weight="bold" font-size="17">Bên trong = 8 con LED</text>
+    <text x="400" y="114">• 7 thanh a–g + 1 dấu chấm DP, mỗi cái là 1 LED.</text>
+    <text x="400" y="138">• Chân − (cathode) của cả 8 LED nối chung vào</text>
+    <text x="400" y="160">  chân <tspan font-weight="bold">3</tspan> và <tspan font-weight="bold">8</tspan> (2 chân này thông nhau) → nối GND.</text>
+    <text x="400" y="184">• Chân + của từng LED đi ra 1 chân riêng.</text>
+    <text x="400" y="208">  Arduino xuất <tspan font-weight="bold">HIGH</tspan> → thanh đó sáng.</text>
+
+    <text x="400" y="250" font-weight="bold" font-size="17">Mỗi thanh cần 1 điện trở riêng (220Ω)</text>
+    <text x="400" y="274">• Giống LED ở bài 3: không có điện trở → cháy LED.</text>
+    <text x="400" y="298">• 7 thanh + DP = <tspan font-weight="bold" fill="#c00">8 điện trở 220Ω</tspan>.</text>
+
+    <text x="400" y="340" font-weight="bold" font-size="17">Ví dụ: hiện số 2</text>
+    <text x="400" y="364">• Bật a, b, g, e, d — tắt c, f.</text>
+    <text x="400" y="388">• Mỗi chữ số 0–9 = 1 kiểu bật/tắt 7 thanh</text>
+    <text x="400" y="410">  → lưu thành MẢNG (bài 8) trong code.</text>
+
+    <text x="400" y="452" font-weight="bold" fill="#c00">Kiểm tra hướng: dấu chấm DP ở góc DƯỚI PHẢI</text>
+    <text x="400" y="474" fill="#c00">khi bạn nhìn thẳng mặt số.</text>
+  </g>
+</svg>
