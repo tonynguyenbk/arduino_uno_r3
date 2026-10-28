@@ -1,0 +1,7 @@
+# Mô phỏng bài 23 bằng Wokwi. Build env lesson23 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Bấm chuột vào phím. Mật mã mặc định: 1234 rồi #.
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson23/firmware.hex'
+elf = '../../../.pio/build/lesson23/firmware.elf'
