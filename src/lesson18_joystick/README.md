@@ -17,7 +17,7 @@ Joystick = **2 biến trở** (bài 7) đặt vuông góc, 1 cho trục ngang, 1
 - **Máy công trình, cần cẩu, máy xúc:** cần điều khiển công nghiệp hoạt động cùng nguyên lý, có thêm cơ chế an toàn.
 
 ## Kiến thức của bài trong hệ thống nhúng
-- **Đọc nhiều kênh ADC:** chip chỉ có 1 bộ ADC, dùng **bộ chọn kênh (multiplexer)** để đo lần lượt từng chân — gọi `analogRead()` cho trục nào thì bộ chọn chuyển sang kênh đó (bài 26 sẽ tự cấu hình).
+- **Đọc nhiều kênh ADC:** chip chỉ có 1 bộ ADC, dùng **bộ chọn kênh (multiplexer)** để đo lần lượt từng chân — gọi `analogRead()` cho trục nào thì bộ chọn chuyển sang kênh đó (bài 28 sẽ tự cấu hình).
 - **Vùng chết + tỉ lệ:** joystick thật không bao giờ về đúng 512. Vùng chết chống "trôi" (drift) — lỗi nổi tiếng của tay cầm game khi biến trở mòn. Tốc độ tỉ lệ với độ gạt cho cảm giác điều khiển mượt.
 - **Hai hệ tọa độ:** joystick "lên" là giá trị tăng, màn hình "lên" là y giảm → phải đổi dấu. Chuyển đổi hệ tọa độ giữa cảm biến và cơ cấu chấp hành là việc thường gặp (robot, drone, máy CNC).
 - **Hiệu năng giao tiếp:** đẩy 1KB ra OLED qua I2C 100kHz mất ~100ms, ở 400kHz chỉ ~25ms → chọn tốc độ bus phù hợp, và chỉ cập nhật màn hình khi có thay đổi.

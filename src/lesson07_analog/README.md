@@ -6,7 +6,7 @@
 - **Quang trở và cảm biến ánh sáng:** đèn đường tự bật khi trời tối, đèn ngủ cảm ứng, điện thoại tự chỉnh độ sáng màn hình.
 
 ## Kiến thức của bài trong hệ thống nhúng
-- **ADC (chuyển đổi tương tự → số):** cầu nối giữa thế giới thật (nhiệt độ, áp suất, ánh sáng, âm thanh đều là điện áp liên tục) và vi điều khiển. Bài 26 sẽ điều khiển ADC bằng thanh ghi.
+- **ADC (chuyển đổi tương tự → số):** cầu nối giữa thế giới thật (nhiệt độ, áp suất, ánh sáng, âm thanh đều là điện áp liên tục) và vi điều khiển. Bài 28 sẽ điều khiển ADC bằng thanh ghi.
 - **Mạch chia áp:** cách phổ biến nhất để biến 1 cảm biến điện trở (nhiệt điện trở NTC, quang trở, cảm biến lực) thành điện áp đọc được.
 - **Độ phân giải và nhiễu:** 10 bit = 1024 mức, mỗi mức ~4.9mV. Dao động ±1 như log bài 7 là bình thường; thiết bị đo chính xác dùng ADC 16–24 bit và lọc trung bình.
 - **Hiệu chuẩn (calibration):** hằng số `A1_KHI_SANG/A1_KHI_TOI` là ví dụ nhỏ của việc hiệu chuẩn — sản phẩm thật lưu hệ số hiệu chuẩn riêng cho từng thiết bị vào EEPROM khi xuất xưởng.

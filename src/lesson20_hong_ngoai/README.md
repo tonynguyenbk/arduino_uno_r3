@@ -18,7 +18,7 @@ LED hồng ngoại nhấp nháy 38kHz ──► mắt thu lọc 38kHz ──► 
 
 ## Kiến thức của bài trong hệ thống nhúng
 - **Điều chế sóng mang (carrier modulation):** nhấp nháy ở 38kHz để mắt thu phân biệt với ánh sáng mặt trời, bóng đèn. Cùng ý tưởng với radio AM/FM, wifi — tín hiệu "cưỡi" trên sóng mang.
-- **Mã hóa bằng độ dài xung (pulse distance coding):** giống DHT (bài 11), servo (bài 13). Thư viện đo thời gian giữa các cạnh tín hiệu bằng timer — bài 24 (ngắt) và 25 (timer) sẽ giải thích cơ chế.
+- **Mã hóa bằng độ dài xung (pulse distance coding):** giống DHT (bài 11), servo (bài 13). Thư viện đo thời gian giữa các cạnh tín hiệu bằng timer — bài 26 (ngắt) và 25 (timer) sẽ giải thích cơ chế.
 - **Phát hiện lỗi đơn giản:** gửi kèm bản đảo của địa chỉ và lệnh — nếu 2 phần không khớp thì bỏ bản tin.
 - **Bảng tra dữ liệu (`struct` + mảng):** ánh xạ mã → hành động nằm trong bảng, đổi remote chỉ đổi bảng, không sửa logic. Kỹ thuật "table-driven design" rất phổ biến trong firmware.
 - **Xử lý giữ nút (auto-repeat):** phân biệt nhấn mới với mã lặp lại → nút +/− giữ thì tăng liên tục, nút số thì không bị nhân đôi.

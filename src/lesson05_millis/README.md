@@ -30,7 +30,7 @@
 
 ## Từ khóa và datasheet
 - **Từ khóa tra cứu:** superloop, non-blocking code, cooperative multitasking, timer overflow, RTOS tick, JTAG/debugWIRE.
-- **Datasheet ATmega328P:** mục **8-bit Timer/Counter0** — `millis()` đếm được là nhờ ngắt tràn của Timer0 (bài 25 sẽ tự làm lại).
+- **Datasheet ATmega328P:** mục **8-bit Timer/Counter0** — `millis()` đếm được là nhờ ngắt tràn của Timer0 (bài 27 sẽ tự làm lại).
 
 ## Câu hỏi phỏng vấn
 - **Tại sao `millis() - lanCuoi >= T` vẫn đúng khi `millis()` tràn về 0?** Gợi ý: phép trừ số không dấu là số học modulo 2³², hiệu vẫn ra đúng khoảng thời gian.

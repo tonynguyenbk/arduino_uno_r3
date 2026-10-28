@@ -10,7 +10,7 @@
 - **Chống dội phím (debounce):** tiếp điểm cơ khí luôn nảy vài mili giây. Giải pháp:
   - Phần mềm: như bài này (chờ ổn định 50ms).
   - Phần cứng: mạch RC + cổng Schmitt trigger, dùng khi không muốn tốn thời gian CPU.
-- **Phát hiện cạnh (edge detection):** chỉ phản ứng lúc trạng thái *thay đổi*, không phải lúc *đang ở* trạng thái đó — tư duy dùng lại ở ngắt (bài 24).
+- **Phát hiện cạnh (edge detection):** chỉ phản ứng lúc trạng thái *thay đổi*, không phải lúc *đang ở* trạng thái đó — tư duy dùng lại ở ngắt (bài 26).
 
 ## Dự án thực tế
 - **PLC công nghiệp:** ngõ vào số thường dùng mức 24V và **cách ly quang (optocoupler)** để chống nhiễu từ động cơ, biến tần trong nhà máy. Bên trong vẫn là ý tưởng đọc HIGH/LOW như bài này.

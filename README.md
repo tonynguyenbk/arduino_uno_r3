@@ -41,14 +41,16 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 19. [x] Cảm biến nước — ngưỡng có trễ, chống ăn mòn bằng cấp nguồn lúc đo *(mô phỏng bằng biến trở trượt, chưa cắm thật)*
 20. [x] Remote hồng ngoại — giao thức NEC, thư viện IRremote, `struct`, bảng tra mã nút *(mô phỏng ✓, chưa cắm thật — đổi `REMOTE_WOKWI = false`)*
 21. [x] LED ma trận 8×8 MAX7219 — bộ đệm khung hình, phông chữ `PROGMEM`, chữ chạy *(mô phỏng ✓, chưa cắm thật)*
-22. [ ] RFID RC522 + thẻ từ — giao tiếp SPI, UID, khóa cửa thẻ từ
+22. [x] RFID RC522 + thẻ từ — giao tiếp SPI, UID, EEPROM, khóa cửa thẻ từ *(mô phỏng bằng nút giả lập thẻ, chưa cắm thật — đổi `MO_PHONG = false`)*
+23. [ ] Bàn phím ma trận 4×4 — tự viết hàm quét hàng/cột, khóa mật mã
+24. [ ] Relay — đóng cắt thiết bị điện, opto cách ly, kích mức cao/thấp, khóa cửa hoàn chỉnh
 
 ### Phần 3 — Nhúng chuyên sâu (AVR ATmega328P)
-23. [ ] Bên trong `digitalWrite`: thanh ghi `DDRx`, `PORTx`, `PINx`, phép toán bit *(đã soạn, tạm hoãn)*
-24. [ ] Ngắt ngoài (INT0/INT1), `volatile`, ISR
-25. [ ] Timer/Counter — tự tạo `millis()`, PWM bằng thanh ghi
-26. [ ] ADC bằng thanh ghi
-27. [ ] UART bằng thanh ghi (tự viết `Serial`)
-28. [ ] I2C / SPI cấp thấp
-29. [ ] Tiết kiệm năng lượng, watchdog
-30. [ ] Lập trình AVR thuần (không dùng Arduino framework), đọc datasheet
+25. [ ] Bên trong `digitalWrite`: thanh ghi `DDRx`, `PORTx`, `PINx`, phép toán bit *(đã soạn, tạm hoãn)*
+26. [ ] Ngắt ngoài (INT0/INT1), `volatile`, ISR
+27. [ ] Timer/Counter — tự tạo `millis()`, PWM bằng thanh ghi
+28. [ ] ADC bằng thanh ghi
+29. [ ] UART bằng thanh ghi (tự viết `Serial`)
+30. [ ] I2C / SPI cấp thấp
+31. [ ] Tiết kiệm năng lượng, watchdog
+32. [ ] Lập trình AVR thuần (không dùng Arduino framework), đọc datasheet

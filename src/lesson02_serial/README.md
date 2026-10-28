@@ -33,7 +33,7 @@ Cổng Serial (UART: truyền nối tiếp không đồng bộ) là "cổng nói
 
 ## Từ khóa và datasheet
 - **Từ khóa tra cứu:** UART, baud rate, TX/RX, start bit/stop bit, integer overflow, type casting.
-- **Datasheet ATmega328P:** mục **USART0** (bài 27 sẽ tự viết `Serial` bằng thanh ghi).
+- **Datasheet ATmega328P:** mục **USART0** (bài 29 sẽ tự viết `Serial` bằng thanh ghi).
 
 ## Câu hỏi phỏng vấn
 - **UART cần mấy dây? Khác I2C, SPI thế nào?** Gợi ý: TX, RX và GND chung. Không có dây xung nhịp nên 2 bên phải thống nhất baud trước. Chỉ nối 2 thiết bị với nhau (điểm–điểm).

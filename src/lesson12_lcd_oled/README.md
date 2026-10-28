@@ -30,7 +30,7 @@
 
 ## Từ khóa và datasheet
 - **Từ khóa tra cứu:** I2C, SDA/SCL, slave address, ACK/NACK, open-drain, pull-up resistor, frame buffer, HMI.
-- **Datasheet ATmega328P:** mục **2-wire Serial Interface (TWI)** — tên gọi I2C của hãng Atmel (bài 28 sẽ điều khiển bằng thanh ghi).
+- **Datasheet ATmega328P:** mục **2-wire Serial Interface (TWI)** — tên gọi I2C của hãng Atmel (bài 30 sẽ điều khiển bằng thanh ghi).
 
 ## Câu hỏi phỏng vấn
 - **So sánh I2C và SPI?** Gợi ý: I2C 2 dây, có địa chỉ, nhiều thiết bị chung bus, chậm hơn (100–400kHz). SPI 4 dây, mỗi thiết bị 1 chân chọn riêng, nhanh hơn nhiều (vài MHz–hàng chục MHz), hay dùng cho màn hình lớn, thẻ nhớ.

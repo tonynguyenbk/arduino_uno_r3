@@ -14,7 +14,7 @@
 - **Âm báo có nhạc:** chuông cửa, đồ chơi trẻ em, thiệp nhạc.
 
 ## Kiến thức của bài trong hệ thống nhúng
-- **Tạo sóng vuông bằng Timer:** `tone()` cấu hình Timer2 để tự đảo chân theo tần số mong muốn — CPU rảnh. Bài 25 sẽ tự làm bằng thanh ghi. Đây cũng là lý do `tone()` làm hỏng PWM chân 3, 11 (cùng dùng Timer2) — xung đột tài nguyên phần cứng giống thư viện Servo ở bài 13.
+- **Tạo sóng vuông bằng Timer:** `tone()` cấu hình Timer2 để tự đảo chân theo tần số mong muốn — CPU rảnh. Bài 27 sẽ tự làm bằng thanh ghi. Đây cũng là lý do `tone()` làm hỏng PWM chân 3, 11 (cùng dùng Timer2) — xung đột tài nguyên phần cứng giống thư viện Servo ở bài 13.
 - **Dữ liệu tách khỏi code:** giai điệu nằm trong 2 mảng (`NOT_NHAC`, `TRUONG_DO`), muốn đổi bài chỉ sửa dữ liệu. `sizeof(mang)/sizeof(mang[0])` để tự đếm số phần tử — không phải đếm tay.
 - **Không chặn CPU:** mỗi chế độ chỉ kiểm tra "đã đến lúc đổi nốt chưa" (như bài 5) → nút luôn phản hồi ngay dù đang phát nhạc.
 - **Âm thanh trong nhúng:** sản phẩm cao cấp hơn dùng **PWM + bộ lọc** hoặc chip DAC/I2S để phát âm thanh thật (giọng nói, nhạc), ví dụ thang máy đọc "Tầng 5", máy ATM hướng dẫn bằng giọng nói.
