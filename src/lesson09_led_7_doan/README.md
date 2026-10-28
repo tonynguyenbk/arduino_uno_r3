@@ -5,7 +5,7 @@
 - **Thiết bị đo công nghiệp:** bộ điều khiển nhiệt độ, đồng hồ đo áp suất, đồng hồ vạn năng — vì đọc được trong môi trường sáng, góc nhìn rộng, bền hàng chục năm.
 
 ## Kiến thức của bài trong hệ thống nhúng
-- **Mã hóa dữ liệu thành bit:** mỗi chữ số = 1 byte, mỗi bit = 1 thanh. Tư duy "một byte chứa nhiều cờ bật/tắt" chính là cách đọc ghi **thanh ghi** của vi điều khiển (bài 17).
+- **Mã hóa dữ liệu thành bit:** mỗi chữ số = 1 byte, mỗi bit = 1 thanh. Tư duy "một byte chứa nhiều cờ bật/tắt" chính là cách đọc ghi **thanh ghi** của vi điều khiển (bài 23).
 - **Quét hiển thị (multiplexing):** đồng hồ 4 chữ số không dùng 4×8 = 32 chân, mà bật lần lượt từng chữ số thật nhanh (mỗi chữ số vài mili giây), mắt thấy như sáng cùng lúc. Tiết kiệm chân và dòng điện — cũng là cách màn hình LED quảng cáo khổng lồ hoạt động.
 - **IC chuyên dụng:** sản phẩm thật dùng IC driver (MAX7219, TM1637, 74HC595) để giảm số chân và gánh dòng điện, vi điều khiển chỉ gửi dữ liệu qua 2–3 dây.
 
@@ -24,7 +24,7 @@
 ## Bài tập mở rộng
 1. **Dễ:** hiển thị thêm chữ A, b, C, d, E, F (số hệ 16).
 2. **Vừa:** nhấn nút thì số tăng 1, giữ nút 1 giây thì về 0.
-3. **Khó:** dùng chân DP nháy mỗi giây như dấu `:` của đồng hồ, và hiện số bằng 1 lệnh ghi thẳng thanh ghi cổng (xem trước bài 17).
+3. **Khó:** dùng chân DP nháy mỗi giây như dấu `:` của đồng hồ, và hiện số bằng 1 lệnh ghi thẳng thanh ghi cổng (xem trước bài 23).
 
 ## Từ khóa và datasheet
 - **Từ khóa tra cứu:** seven-segment display, common cathode/anode, multiplexing, bitmask, shift register 74HC595, MAX7219.

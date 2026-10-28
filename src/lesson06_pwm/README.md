@@ -9,7 +9,7 @@ PWM (điều chế độ rộng xung) có lẽ là kỹ thuật được dùng n
 - **Âm thanh:** ampli class-D trong loa bluetooth, tai nghe.
 
 ## Kiến thức của bài trong hệ thống nhúng
-- **PWM bằng phần cứng Timer:** chip tự tạo xung, CPU không tốn công — bài 19 sẽ tự cấu hình thanh ghi Timer để tạo PWM.
+- **PWM bằng phần cứng Timer:** chip tự tạo xung, CPU không tốn công — bài 25 sẽ tự cấu hình thanh ghi Timer để tạo PWM.
 - **Hiệu chỉnh gamma:** mắt người cảm nhận ánh sáng không tuyến tính. Màn hình TV, điện thoại, bảng LED đều có bảng gamma. Bài 8 đã tối ưu bằng bảng tra.
 - **Tần số PWM quan trọng:** quá thấp thì đèn nhấp nháy (gây mỏi mắt — các hãng điện thoại quảng cáo "chống nhấp nháy"), động cơ kêu rè rè ở dải tai nghe được.
 
@@ -22,7 +22,7 @@ PWM (điều chế độ rộng xung) có lẽ là kỹ thuật được dùng n
 | Triệu chứng | Nguyên nhân | Cách sửa |
 |---|---|---|
 | LED chỉ bật/tắt, không mờ được | Chân không có PWM (ví dụ chân 8) | Dùng chân có dấu `~`: 3, 5, 6, 9, 10, 11 |
-| Đang dùng servo/`tone()` thì PWM chân khác hỏng | Các tính năng dùng chung timer | Xem bảng chân–timer (bài 19), chọn chân khác |
+| Đang dùng servo/`tone()` thì PWM chân khác hỏng | Các tính năng dùng chung timer | Xem bảng chân–timer (bài 25), chọn chân khác |
 | `analogWrite(chan, 300)` sáng sai | Giá trị chỉ được 0–255 | Dùng `constrain()` hoặc `map()` trước |
 | Sáng dần nhưng mắt thấy "vọt" ở đầu | Mắt cảm nhận phi tuyến | Hiệu chỉnh gamma |
 

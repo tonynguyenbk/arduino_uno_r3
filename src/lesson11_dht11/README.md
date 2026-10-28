@@ -14,7 +14,7 @@
 
 ## Dự án thực tế
 - **Phòng máy chủ (data center):** hàng trăm cảm biến nhiệt độ ẩm, vượt ngưỡng là gửi cảnh báo.
-- **IoT nông nghiệp:** cảm biến chạy pin gửi dữ liệu qua LoRa/NB-IoT về máy chủ mỗi 15 phút, chạy được 1–2 năm nhờ chế độ ngủ tiết kiệm điện (bài 23).
+- **IoT nông nghiệp:** cảm biến chạy pin gửi dữ liệu qua LoRa/NB-IoT về máy chủ mỗi 15 phút, chạy được 1–2 năm nhờ chế độ ngủ tiết kiệm điện (bài 29).
 
 ## Lỗi thường gặp
 | Triệu chứng | Nguyên nhân | Cách sửa |

@@ -36,13 +36,19 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 14. [x] Động cơ bước 28BYJ-48 + ULN2003 — thư viện Stepper, vùng chết, `long` *(mô phỏng ✓ với động cơ 200 bước, chưa cắm thật — đổi `BUOC_MOI_VONG` thành 2048)*
 15. [x] Động cơ DC + L298N — cầu H, PWM tốc độ, tăng/giảm tốc từ từ *(mô phỏng bằng LED, chưa cắm thật)*
 16. [x] Máy trạng thái (state machine) — đèn giao thông ngã tư, `enum`, `switch`, mảng 2 chiều, giám sát an toàn *(mô phỏng ✓, chưa cắm thật)*
+17. [ ] Chuông (buzzer) — `tone()`, chuông chủ động / thụ động, giai điệu bằng mảng
+18. [ ] Joystick — 2 trục analog + nút, vùng chết
+19. [ ] Cảm biến nước — ngưỡng có trễ, chống ăn mòn
+20. [ ] Remote hồng ngoại — giao thức NEC, thư viện IRremote
+21. [ ] LED ma trận 8×8 MAX7219 — quét hàng/cột, chữ chạy
+22. [ ] RFID RC522 + thẻ từ — giao tiếp SPI, UID, khóa cửa thẻ từ
 
 ### Phần 3 — Nhúng chuyên sâu (AVR ATmega328P)
-17. [ ] Bên trong `digitalWrite`: thanh ghi `DDRx`, `PORTx`, `PINx`, phép toán bit
-18. [ ] Ngắt ngoài (INT0/INT1), `volatile`, ISR
-19. [ ] Timer/Counter — tự tạo `millis()`, PWM bằng thanh ghi
-20. [ ] ADC bằng thanh ghi
-21. [ ] UART bằng thanh ghi (tự viết `Serial`)
-22. [ ] I2C / SPI cấp thấp
-23. [ ] Tiết kiệm năng lượng, watchdog
-24. [ ] Lập trình AVR thuần (không dùng Arduino framework), đọc datasheet
+23. [ ] Bên trong `digitalWrite`: thanh ghi `DDRx`, `PORTx`, `PINx`, phép toán bit *(đã soạn, tạm hoãn)*
+24. [ ] Ngắt ngoài (INT0/INT1), `volatile`, ISR
+25. [ ] Timer/Counter — tự tạo `millis()`, PWM bằng thanh ghi
+26. [ ] ADC bằng thanh ghi
+27. [ ] UART bằng thanh ghi (tự viết `Serial`)
+28. [ ] I2C / SPI cấp thấp
+29. [ ] Tiết kiệm năng lượng, watchdog
+30. [ ] Lập trình AVR thuần (không dùng Arduino framework), đọc datasheet

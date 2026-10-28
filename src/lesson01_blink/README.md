@@ -5,7 +5,7 @@
 - **Nháy theo mã** để báo lỗi khi thiết bị không có màn hình: điều hòa nháy đèn N lần, xe ô tô đời cũ (chuẩn OBD-I) nháy đèn "Check Engine" theo mã lỗi để thợ đọc.
 
 ## Kiến thức của bài trong hệ thống nhúng
-- **GPIO output** (chân vào/ra đa năng, ở chế độ xuất): thao tác cơ bản nhất của mọi vi điều khiển. Bài 17 sẽ cho thấy `digitalWrite` thực chất là ghi 1 bit vào thanh ghi `PORTB`.
+- **GPIO output** (chân vào/ra đa năng, ở chế độ xuất): thao tác cơ bản nhất của mọi vi điều khiển. Bài 23 sẽ cho thấy `digitalWrite` thực chất là ghi 1 bit vào thanh ghi `PORTB`.
 - **"Hello world" của phần cứng:** khi thiết kế 1 bo mạch mới, việc đầu tiên kỹ sư làm (gọi là *board bring-up*) là nháy được 1 LED. Nháy được nghĩa là chip đã có nguồn, xung nhịp chạy đúng, và nạp code thành công.
 - **Heartbeat LED:** nhiều thiết bị công nghiệp nháy 1 LED đều đặn để báo "chương trình vẫn đang chạy". LED đứng im (sáng hoặc tắt) nghĩa là firmware đã treo.
 - **`delay()` chặn cả chương trình:** chấp nhận được với bài này, nhưng là lý do phải học `millis()` (bài 5) và sau này là hệ điều hành thời gian thực (RTOS).

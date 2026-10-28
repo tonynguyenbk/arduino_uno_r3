@@ -8,7 +8,7 @@
   - **Bảng gamma** trong mọi màn hình.
 - **Tối ưu bộ nhớ:** chip lớn hơn có thể đặt bảng trong bộ nhớ Flash (`PROGMEM` trên AVR) để không tốn RAM — sẽ gặp lại khi RAM chật.
 - **Hàm = tổ chức code thành lớp:** firmware chuyên nghiệp chia thành các lớp: **HAL** (lớp trừu tượng phần cứng: `docNut()`, `datDoSang()`) → **driver** → **ứng dụng**. Đổi chip chỉ phải viết lại lớp HAL.
-- **Đo thời gian thực thi** bằng `micros()`: kỹ sư nhúng luôn phải biết đoạn code tốn bao lâu, đặc biệt trong ngắt (bài 18).
+- **Đo thời gian thực thi** bằng `micros()`: kỹ sư nhúng luôn phải biết đoạn code tốn bao lâu, đặc biệt trong ngắt (bài 24).
 
 ## Dự án thực tế
 - **Bộ điều khiển động cơ BLDC/xe điện:** vòng điều khiển chạy 10.000–20.000 lần/giây, gần như mọi phép toán nặng đều thay bằng bảng tra hoặc số nguyên.

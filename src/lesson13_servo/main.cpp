@@ -8,7 +8,7 @@
 // Servo khác động cơ thường: bên trong có mạch tự giữ đúng GÓC được yêu cầu.
 // Cách ra lệnh: cứ 20ms gửi 1 xung HIGH, độ dài xung quyết định góc:
 //   ~0.5ms -> 0 độ,   ~1.5ms -> 90 độ,   ~2.5ms -> 180 độ
-// Thư viện Servo tự tạo các xung này (dùng Timer1 của chip - xem bài 19).
+// Thư viện Servo tự tạo các xung này (dùng Timer1 của chip - xem bài 25).
 // Hệ quả: khi dùng Servo, analogWrite() trên chân 9 và 10 KHÔNG còn chạy được.
 //
 // Lưu ý nguồn: servo kéo dòng lớn khi quay (có thể vài trăm mA). 1 servo SG90 cấp từ 5V
