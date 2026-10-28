@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "author": "tonynguyenbk",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-stepper-motor", "id": "stepper1", "top": -60, "left": 300, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 140, "left": -150, "attrs": {} }
+  ],
+  "connections": [
+    [ "uno:11", "stepper1:B-", "purple", [ "h56.9", "v118.1", "h133.9" ] ],
+    [ "uno:10", "stepper1:A-", "blue", [ "h46.9", "v78.6", "h115.1" ] ],
+    [ "uno:9", "stepper1:B+", "green", [ "h36.9", "v89.1", "h144.3" ] ],
+    [ "uno:8", "stepper1:A+", "orange", [ "h26.9", "v69.1", "h144.7" ] ],
+
+    [ "pot1:VCC", "uno:5V", "red", [ "v20", "h111", "v-100.6" ] ],
+    [ "pot1:SIG", "uno:A0", "green", [ "v30", "h111", "v-62.6" ] ],
+    [ "pot1:GND", "uno:GND.2", "black", [ "v40", "h111", "v-111.1" ] ]
+  ],
+  "dependencies": {}
+}

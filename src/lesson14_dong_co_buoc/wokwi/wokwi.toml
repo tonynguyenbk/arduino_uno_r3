@@ -1,0 +1,7 @@
+# Mô phỏng bài 14 bằng Wokwi. Build env lesson14 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Wokwi không có 28BYJ-48 + ULN2003 -> dùng động cơ bước 2 cuộn dây, nối thẳng 4 chân Arduino vào 4 đầu cuộn dây.
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson14/firmware.hex'
+elf = '../../../.pio/build/lesson14/firmware.elf'
