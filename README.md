@@ -35,7 +35,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 13. [x] Servo SG90 — thư viện Servo, độ dài xung, Timer1 *(mô phỏng ✓, chưa cắm thật)*
 14. [x] Động cơ bước 28BYJ-48 + ULN2003 — thư viện Stepper, vùng chết, `long` *(mô phỏng ✓ với động cơ 200 bước, chưa cắm thật — đổi `BUOC_MOI_VONG` thành 2048)*
 15. [x] Động cơ DC + L298N — cầu H, PWM tốc độ, tăng/giảm tốc từ từ *(mô phỏng bằng LED, chưa cắm thật)*
-16. [ ] Máy trạng thái (state machine) — dự án tổng hợp
+16. [x] Máy trạng thái (state machine) — đèn giao thông ngã tư, `enum`, `switch`, mảng 2 chiều, giám sát an toàn *(mô phỏng ✓, chưa cắm thật)*
 
 ### Phần 3 — Nhúng chuyên sâu (AVR ATmega328P)
 17. [ ] Bên trong `digitalWrite`: thanh ghi `DDRx`, `PORTx`, `PINx`, phép toán bit

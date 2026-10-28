@@ -1,0 +1,11 @@
+# Mô phỏng bài 16 bằng Wokwi. Build env lesson16 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Mô phỏng nối LED thẳng không điện trở cho gọn hình; mạch thật MỖI LED cần 1 điện trở 220Ω.
+# 4 cột đèn ở 4 góc ngã tư (mỗi cột từ trên xuống: đỏ - vàng - xanh):
+#   Tây-Bắc + Đông-Nam = hướng Bắc-Nam,  Đông-Bắc + Tây-Nam = hướng Đông-Tây.
+#   Cột 2 đèn dưới cùng bên trái: người đi bộ; nút xanh dương: xin qua đường.
+# File diagram.json được sinh bằng script (đường dây tính sẵn để không chéo nhau).
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson16/firmware.hex'
+elf = '../../../.pio/build/lesson16/firmware.elf'
