@@ -1,47 +1,47 @@
-# Học Arduino Uno R3 — từ cơ bản đến nhúng chuyên sâu
+# Há»c Arduino Uno R3 â€” tá»« cÆ¡ báº£n Ä‘áº¿n nhÃºng chuyÃªn sÃ¢u
 
-Công cụ: VS Code + PlatformIO. Board ở cổng `COM5` (khai báo trong `platformio.ini`; COM4 trên máy này là webcam).
+CÃ´ng cá»¥: VS Code + PlatformIO. Board á»Ÿ cá»•ng `COM5` (khai bÃ¡o trong `platformio.ini`; COM4 trÃªn mÃ¡y nÃ y lÃ  webcam).
 
-## Cách nạp một bài
-- **Cách 1 (bấm nút):** thanh trạng thái dưới cùng VS Code → chọn env (vd `env:lesson01`) → bấm mũi tên **→ (Upload)**. Bấm biểu tượng **ổ cắm (Serial Monitor)** để xem dữ liệu board gửi lên.
-- **Cách 2 (lệnh):** bấm nút `>_` (PlatformIO Core CLI) trên thanh trạng thái để mở terminal, rồi gõ `pio run -e lesson01 -t upload` và `pio device monitor`
+## CÃ¡ch náº¡p má»™t bÃ i
+- **CÃ¡ch 1 (báº¥m nÃºt):** thanh tráº¡ng thÃ¡i dÆ°á»›i cÃ¹ng VS Code â†’ chá»n env (vd `env:lesson01`) â†’ báº¥m mÅ©i tÃªn **â†’ (Upload)**. Báº¥m biá»ƒu tÆ°á»£ng **á»• cáº¯m (Serial Monitor)** Ä‘á»ƒ xem dá»¯ liá»‡u board gá»­i lÃªn.
+- **CÃ¡ch 2 (lá»‡nh):** báº¥m nÃºt `>_` (PlatformIO Core CLI) trÃªn thanh tráº¡ng thÃ¡i Ä‘á»ƒ má»Ÿ terminal, rá»“i gÃµ `pio run -e lesson01 -t upload` vÃ  `pio device monitor`
 
-**Mỗi bài một thư mục** `src/lessonNN_*/`: code `main.cpp`, ảnh sơ đồ nối dây (`so_do*.png` chụp từ Wokwi, hoặc `*.svg`), và nếu có mô phỏng thì `wokwi.toml` + `diagram.json`.
-Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `Ctrl+Shift+P` → **Wokwi: Select Config File** → chọn `wokwi.toml` của bài → **Wokwi: Start Simulator**.
+**Má»—i bÃ i má»™t thÆ° má»¥c** `src/lessonNN_*/`: code `main.cpp`, áº£nh sÆ¡ Ä‘á»“ ná»‘i dÃ¢y (`so_do*.png` chá»¥p tá»« Wokwi, hoáº·c `*.svg`), vÃ  náº¿u cÃ³ mÃ´ phá»ng thÃ¬ `wokwi.toml` + `diagram.json`.
+Cháº¡y mÃ´ phá»ng (cáº§n extension Wokwi Simulator): build env cá»§a bÃ i â†’ `Ctrl+Shift+P` â†’ **Wokwi: Select Config File** â†’ chá»n `wokwi.toml` cá»§a bÃ i â†’ **Wokwi: Start Simulator**.
 
-**Lưu ý**
-- Mỗi lần mở Serial Monitor, nội dung được lưu vào file `logs/device-monitor-*.log`.
-- Nút Upload của PlatformIO tự đóng Serial Monitor rồi mở lại sau khi nạp. Khi nạp bằng lệnh `pio run -t upload` thì phải tự đóng Serial Monitor trước (bấm vào terminal → `Ctrl+C`, hoặc 🗑 Kill Terminal), nếu không sẽ báo lỗi `Access is denied`.
-- Khi có bài mới được thêm vào `platformio.ini`, chạy `Ctrl+Shift+P` → **Developer: Reload Window**, chờ PlatformIO tải xong rồi mới Upload. Nếu không, nút Upload có thể báo lỗi *"Cannot read properties of undefined (reading 'id')"*.
+**LÆ°u Ã½**
+- Má»—i láº§n má»Ÿ Serial Monitor, ná»™i dung Ä‘Æ°á»£c lÆ°u vÃ o file `logs/device-monitor-*.log`.
+- NÃºt Upload cá»§a PlatformIO tá»± Ä‘Ã³ng Serial Monitor rá»“i má»Ÿ láº¡i sau khi náº¡p. Khi náº¡p báº±ng lá»‡nh `pio run -t upload` thÃ¬ pháº£i tá»± Ä‘Ã³ng Serial Monitor trÆ°á»›c (báº¥m vÃ o terminal â†’ `Ctrl+C`, hoáº·c ðŸ—‘ Kill Terminal), náº¿u khÃ´ng sáº½ bÃ¡o lá»—i `Access is denied`.
+- Khi cÃ³ bÃ i má»›i Ä‘Æ°á»£c thÃªm vÃ o `platformio.ini`, cháº¡y `Ctrl+Shift+P` â†’ **Developer: Reload Window**, chá» PlatformIO táº£i xong rá»“i má»›i Upload. Náº¿u khÃ´ng, nÃºt Upload cÃ³ thá»ƒ bÃ¡o lá»—i *"Cannot read properties of undefined (reading 'id')"*.
 
-## Lộ trình
+## Lá»™ trÃ¬nh
 
-### Phần 1 — Làm quen (C++ cơ bản + chân I/O)
-1. [x] Nháy LED có sẵn — `setup()`, `loop()`, `delay()`
-2. [x] Serial Monitor — in chữ, biến, kiểu dữ liệu, phép toán
-3. [x] LED ngoài + breadboard + điện trở — định luật Ohm, `if/else`, `for`
-4. [x] Nút nhấn — `digitalRead`, `INPUT_PULLUP`, chống dội phím
-5. [x] `millis()` thay `delay()` — làm nhiều việc cùng lúc
-6. [x] PWM — làm mờ LED với `analogWrite`
-7. [x] Đọc analog — biến trở / LDR, `analogRead`, `map()`, `constrain()` *(7B quang trở: mới mô phỏng, chưa cắm thật)*
-8. [x] Hàm, mảng — tổ chức code gọn gàng, bảng tra gamma (nhanh hơn `pow()` ~460 lần)
+### Pháº§n 1 â€” LÃ m quen (C++ cÆ¡ báº£n + chÃ¢n I/O)
+1. [x] NhÃ¡y LED cÃ³ sáºµn â€” `setup()`, `loop()`, `delay()`
+2. [x] Serial Monitor â€” in chá»¯, biáº¿n, kiá»ƒu dá»¯ liá»‡u, phÃ©p toÃ¡n
+3. [x] LED ngoÃ i + breadboard + Ä‘iá»‡n trá»Ÿ â€” Ä‘á»‹nh luáº­t Ohm, `if/else`, `for`
+4. [x] NÃºt nháº¥n â€” `digitalRead`, `INPUT_PULLUP`, chá»‘ng dá»™i phÃ­m
+5. [x] `millis()` thay `delay()` â€” lÃ m nhiá»u viá»‡c cÃ¹ng lÃºc
+6. [x] PWM â€” lÃ m má» LED vá»›i `analogWrite`
+7. [x] Äá»c analog â€” biáº¿n trá»Ÿ / LDR, `analogRead`, `map()`, `constrain()` *(7B quang trá»Ÿ: má»›i mÃ´ phá»ng, chÆ°a cáº¯m tháº­t)*
+8. [x] HÃ m, máº£ng â€” tá»• chá»©c code gá»n gÃ ng, báº£ng tra gamma (nhanh hÆ¡n `pow()` ~460 láº§n)
 
-### Phần 2 — Linh kiện ngoại vi
-9. [x] LED 7 đoạn 5611AH — mảng chữ số, `bitRead` *(mô phỏng ✓, chưa cắm thật)*
-10. [x] Cảm biến siêu âm HC-SR04 — `pulseIn`, cảm biến lùi xe *(mô phỏng ✓, chưa cắm thật)*
-11. [x] DHT11 — dùng thư viện (`lib_deps`), đối tượng, `isnan` *(mô phỏng ✓ với DHT22, chưa cắm thật — đổi `LOAI_CAM_BIEN` thành DHT11)*
-12. [x] LCD 1602 / OLED qua I2C — `Wire`, dò địa chỉ I2C, số hex, con trỏ *(mô phỏng ✓, chưa cắm thật)*
-13. [ ] Servo SG90
-14. [ ] Động cơ bước 28BYJ-48 + ULN2003
-15. [ ] Động cơ DC + L298N
-16. [ ] Máy trạng thái (state machine) — dự án tổng hợp
+### Pháº§n 2 â€” Linh kiá»‡n ngoáº¡i vi
+9. [x] LED 7 Ä‘oáº¡n 5611AH â€” máº£ng chá»¯ sá»‘, `bitRead` *(mÃ´ phá»ng âœ“, chÆ°a cáº¯m tháº­t)*
+10. [x] Cáº£m biáº¿n siÃªu Ã¢m HC-SR04 â€” `pulseIn`, cáº£m biáº¿n lÃ¹i xe *(mÃ´ phá»ng âœ“, chÆ°a cáº¯m tháº­t)*
+11. [x] DHT11 â€” dÃ¹ng thÆ° viá»‡n (`lib_deps`), Ä‘á»‘i tÆ°á»£ng, `isnan` *(mÃ´ phá»ng âœ“ vá»›i DHT22, chÆ°a cáº¯m tháº­t â€” Ä‘á»•i `LOAI_CAM_BIEN` thÃ nh DHT11)*
+12. [x] LCD 1602 / OLED qua I2C â€” `Wire`, dÃ² Ä‘á»‹a chá»‰ I2C, sá»‘ hex, con trá» *(mÃ´ phá»ng âœ“, chÆ°a cáº¯m tháº­t)*
+13. [x] Servo SG90 — thư viện Servo, độ dài xung, Timer1 *(mô phỏng ✓, chưa cắm thật)*
+14. [ ] Äá»™ng cÆ¡ bÆ°á»›c 28BYJ-48 + ULN2003
+15. [ ] Äá»™ng cÆ¡ DC + L298N
+16. [ ] MÃ¡y tráº¡ng thÃ¡i (state machine) â€” dá»± Ã¡n tá»•ng há»£p
 
-### Phần 3 — Nhúng chuyên sâu (AVR ATmega328P)
-17. [ ] Bên trong `digitalWrite`: thanh ghi `DDRx`, `PORTx`, `PINx`, phép toán bit
-18. [ ] Ngắt ngoài (INT0/INT1), `volatile`, ISR
-19. [ ] Timer/Counter — tự tạo `millis()`, PWM bằng thanh ghi
-20. [ ] ADC bằng thanh ghi
-21. [ ] UART bằng thanh ghi (tự viết `Serial`)
-22. [ ] I2C / SPI cấp thấp
-23. [ ] Tiết kiệm năng lượng, watchdog
-24. [ ] Lập trình AVR thuần (không dùng Arduino framework), đọc datasheet
+### Pháº§n 3 â€” NhÃºng chuyÃªn sÃ¢u (AVR ATmega328P)
+17. [ ] BÃªn trong `digitalWrite`: thanh ghi `DDRx`, `PORTx`, `PINx`, phÃ©p toÃ¡n bit
+18. [ ] Ngáº¯t ngoÃ i (INT0/INT1), `volatile`, ISR
+19. [ ] Timer/Counter â€” tá»± táº¡o `millis()`, PWM báº±ng thanh ghi
+20. [ ] ADC báº±ng thanh ghi
+21. [ ] UART báº±ng thanh ghi (tá»± viáº¿t `Serial`)
+22. [ ] I2C / SPI cáº¥p tháº¥p
+23. [ ] Tiáº¿t kiá»‡m nÄƒng lÆ°á»£ng, watchdog
+24. [ ] Láº­p trÃ¬nh AVR thuáº§n (khÃ´ng dÃ¹ng Arduino framework), Ä‘á»c datasheet
