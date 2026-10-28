@@ -38,7 +38,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 16. [x] Máy trạng thái (state machine) — đèn giao thông ngã tư, `enum`, `switch`, mảng 2 chiều, giám sát an toàn *(mô phỏng ✓, chưa cắm thật)*
 17. [x] Chuông (buzzer) — `tone()`, chuông chủ động / thụ động, giai điệu bằng mảng *(mô phỏng ✓, chưa cắm thật)*
 18. [x] Joystick — 2 trục analog + nút, vùng chết, bảng vẽ trên OLED *(mô phỏng ✓, chưa cắm thật)*
-19. [ ] Cảm biến nước — ngưỡng có trễ, chống ăn mòn
+19. [x] Cảm biến nước — ngưỡng có trễ, chống ăn mòn bằng cấp nguồn lúc đo *(mô phỏng bằng biến trở trượt, chưa cắm thật)*
 20. [ ] Remote hồng ngoại — giao thức NEC, thư viện IRremote
 21. [ ] LED ma trận 8×8 MAX7219 — quét hàng/cột, chữ chạy
 22. [ ] RFID RC522 + thẻ từ — giao tiếp SPI, UID, khóa cửa thẻ từ

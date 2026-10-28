@@ -1,0 +1,7 @@
+# Mô phỏng bài 19 bằng Wokwi. Build env lesson19 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Wokwi không có cảm biến nước -> biến trở trượt đóng vai mực nước: kéo sang phải = nước dâng.
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson19/firmware.hex'
+elf = '../../../.pio/build/lesson19/firmware.elf'

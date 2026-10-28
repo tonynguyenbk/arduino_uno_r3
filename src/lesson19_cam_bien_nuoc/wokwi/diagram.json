@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "tonynguyenbk",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-slide-potentiometer", "id": "mucNuoc", "top": 280, "left": 20, "attrs": {} },
+    { "type": "wokwi-led", "id": "ledXanh", "top": 0, "left": 300, "attrs": { "color": "limegreen", "label": "Thap" } },
+    { "type": "wokwi-led", "id": "ledVang", "top": 0, "left": 360, "attrs": { "color": "yellow", "label": "Vua" } },
+    { "type": "wokwi-led", "id": "ledDo", "top": 0, "left": 420, "attrs": { "color": "red", "label": "Ngap" } }
+  ],
+  "connections": [
+    [ "uno:7", "mucNuoc:VCC", "red", [ "h20", "v113.1", "h-248.1", "v53" ] ],
+    [ "mucNuoc:SIG", "uno:A0", "blue", [ "h-25", "v-167.1" ] ],
+    [ "mucNuoc:GND", "uno:GND.3", "black", [ "v30", "h-240", "v-206.1" ] ],
+
+    [ "uno:10", "ledXanh:A", "green", [ "h91.9" ] ],
+    [ "uno:9", "ledVang:A", "gold", [ "h151.9" ] ],
+    [ "uno:8", "ledDo:A", "red", [ "h211.9" ] ],
+    [ "uno:GND.1", "ledXanh:C", "black", [ "h60", "v-31.4", "h21.9" ] ],
+    [ "ledXanh:C", "ledVang:C", "black", [ "v10", "h60" ] ],
+    [ "ledVang:C", "ledDo:C", "black", [ "v10", "h60" ] ]
+  ],
+  "dependencies": {}
+}
