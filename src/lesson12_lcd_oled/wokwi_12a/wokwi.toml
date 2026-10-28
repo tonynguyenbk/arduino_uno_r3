@@ -1,0 +1,6 @@
+# Mô phỏng bài 12A (LCD 1602) bằng Wokwi. Build env lesson12 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson12/firmware.hex'
+elf = '../../../.pio/build/lesson12/firmware.elf'

@@ -30,7 +30,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 9. [x] LED 7 đoạn 5611AH — mảng chữ số, `bitRead` *(mô phỏng ✓, chưa cắm thật)*
 10. [x] Cảm biến siêu âm HC-SR04 — `pulseIn`, cảm biến lùi xe *(mô phỏng ✓, chưa cắm thật)*
 11. [x] DHT11 — dùng thư viện (`lib_deps`), đối tượng, `isnan` *(mô phỏng ✓ với DHT22, chưa cắm thật — đổi `LOAI_CAM_BIEN` thành DHT11)*
-12. [ ] LCD 1602 / OLED qua I2C
+12. [x] LCD 1602 / OLED qua I2C — `Wire`, dò địa chỉ I2C, số hex, con trỏ *(mô phỏng ✓, chưa cắm thật)*
 13. [ ] Servo SG90
 14. [ ] Động cơ bước 28BYJ-48 + ULN2003
 15. [ ] Động cơ DC + L298N
