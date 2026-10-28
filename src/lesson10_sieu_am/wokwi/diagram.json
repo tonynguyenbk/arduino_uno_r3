@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "author": "tonynguyenbk",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "sonar", "top": -60, "left": -180, "attrs": { "distance": "50" } },
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": 20, "left": 320, "attrs": {} },
+    { "type": "wokwi-resistor", "id": "r1", "top": 74.8, "left": 375.6, "attrs": { "value": "220" } },
+    { "type": "wokwi-led", "id": "led1", "top": 101.4, "left": 418.2, "rotate": 180, "attrs": { "color": "red" } }
+  ],
+  "connections": [
+    [ "r1:1", "bb1:4t.b", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:10t.b", "", [ "$bb" ] ],
+    [ "led1:A", "bb1:10t.e", "", [ "$bb" ] ],
+    [ "led1:C", "bb1:11t.e", "", [ "$bb" ] ],
+
+    [ "uno:GND.1", "bb1:11t.a", "black", [ "h21.9", "v-83.4", "h187.8" ] ],
+    [ "uno:9", "bb1:4t.a", "orange", [ "h36.9", "v-120.9", "h105.6" ] ],
+
+    [ "sonar:VCC", "uno:5V", "red", [ "v93.4" ] ],
+    [ "sonar:TRIG", "uno:A0", "gold", [ "v141.4" ] ],
+    [ "sonar:ECHO", "uno:A1", "blue", [ "v150.9" ] ],
+    [ "sonar:GND", "uno:GND.2", "black", [ "v102.9" ] ]
+  ],
+  "dependencies": {}
+}

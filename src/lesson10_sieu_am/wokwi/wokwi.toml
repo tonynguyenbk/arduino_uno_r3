@@ -1,0 +1,7 @@
+# Mô phỏng bài 10 bằng Wokwi. Build env lesson10 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Khi đang chạy: bấm vào cảm biến HC-SR04 để kéo thanh chỉnh khoảng cách.
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson10/firmware.hex'
+elf = '../../../.pio/build/lesson10/firmware.elf'

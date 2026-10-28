@@ -28,7 +28,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 
 ### Phần 2 — Linh kiện ngoại vi
 9. [x] LED 7 đoạn 5611AH — mảng chữ số, `bitRead` *(mô phỏng ✓, chưa cắm thật)*
-10. [ ] Cảm biến siêu âm HC-SR04 — `pulseIn`
+10. [x] Cảm biến siêu âm HC-SR04 — `pulseIn`, cảm biến lùi xe *(mô phỏng ✓, chưa cắm thật)*
 11. [ ] DHT11 — dùng thư viện
 12. [ ] LCD 1602 / OLED qua I2C
 13. [ ] Servo SG90
