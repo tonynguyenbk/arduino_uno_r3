@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "tonynguyenbk",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-max7219-matrix", "id": "matran1", "top": 40, "left": 320, "attrs": { "chain": "1" } }
+  ],
+  "connections": [
+    [ "uno:13", "matran1:CLK", "orange", [ "h50" ] ],
+    [ "uno:11", "matran1:DIN", "green", [ "h40" ] ],
+    [ "uno:10", "matran1:CS", "blue", [ "h30" ] ],
+    [ "uno:GND.1", "matran1:GND", "black", [ "h60" ] ],
+    [ "uno:5V", "matran1:V+", "red", [ "h-20", "v-170", "h300" ] ]
+  ],
+  "dependencies": {}
+}
