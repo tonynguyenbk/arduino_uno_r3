@@ -37,7 +37,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 15. [x] Động cơ DC + L298N — cầu H, PWM tốc độ, tăng/giảm tốc từ từ *(mô phỏng bằng LED, chưa cắm thật)*
 16. [x] Máy trạng thái (state machine) — đèn giao thông ngã tư, `enum`, `switch`, mảng 2 chiều, giám sát an toàn *(mô phỏng ✓, chưa cắm thật)*
 17. [x] Chuông (buzzer) — `tone()`, chuông chủ động / thụ động, giai điệu bằng mảng *(mô phỏng ✓, chưa cắm thật)*
-18. [ ] Joystick — 2 trục analog + nút, vùng chết
+18. [x] Joystick — 2 trục analog + nút, vùng chết, bảng vẽ trên OLED *(mô phỏng ✓, chưa cắm thật)*
 19. [ ] Cảm biến nước — ngưỡng có trễ, chống ăn mòn
 20. [ ] Remote hồng ngoại — giao thức NEC, thư viện IRremote
 21. [ ] LED ma trận 8×8 MAX7219 — quét hàng/cột, chữ chạy

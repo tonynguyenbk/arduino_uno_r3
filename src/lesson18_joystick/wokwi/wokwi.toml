@@ -1,0 +1,7 @@
+# Mô phỏng bài 18 bằng Wokwi. Build env lesson18 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Kéo cần joystick bằng chuột để vẽ; bấm vào giữa joystick để xóa màn hình.
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson18/firmware.hex'
+elf = '../../../.pio/build/lesson18/firmware.elf'
