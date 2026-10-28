@@ -1,0 +1,7 @@
+# Mô phỏng bài 11 bằng Wokwi. Build env lesson11 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Khi đang chạy: bấm vào cảm biến để chỉnh nhiệt độ, độ ẩm.
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson11/firmware.hex'
+elf = '../../../.pio/build/lesson11/firmware.elf'
