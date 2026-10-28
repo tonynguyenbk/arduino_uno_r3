@@ -45,12 +45,25 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 23. [x] Bàn phím ma trận 4×4 — tự viết hàm quét hàng/cột, khóa mật mã, chuỗi C *(mô phỏng ✓, chưa cắm thật)*
 24. [x] Relay — đóng cắt thiết bị điện, opto cách ly, kích mức cao/thấp, khóa cửa điện từ *(mô phỏng ✓, chưa cắm thật)*
 
+25. [ ] IC 74HC595 — thanh ghi dịch, mở rộng chân ra
+26. [ ] Núm xoay vô cực (rotary encoder) — tín hiệu cầu phương, đếm vị trí
+27. [ ] Cảm biến chuyển động PIR — đèn tự bật khi có người
+28. [ ] Module thời gian thực RTC — ngày giờ, hẹn giờ
+29. [ ] Transistor / MOSFET — tự thiết kế mạch đóng cắt tải lớn
+30. [ ] Bluetooth HC-05 — điều khiển bằng điện thoại, SoftwareSerial
+
+### Kỹ năng tổng hợp
+31. [ ] Tổ chức code nhiều file + class (`.h`/`.cpp`)
+32. [ ] Nhận lệnh từ máy tính qua Serial — bộ tách lệnh (parser)
+33. [ ] Logic Analyzer — nhìn tận mắt PWM, I2C, SPI, hồng ngoại
+34. [ ] Dự án tổng hợp: nhà thông minh mini
+
 ### Phần 3 — Nhúng chuyên sâu (AVR ATmega328P)
-25. [ ] Bên trong `digitalWrite`: thanh ghi `DDRx`, `PORTx`, `PINx`, phép toán bit *(đã soạn, tạm hoãn)*
-26. [ ] Ngắt ngoài (INT0/INT1), `volatile`, ISR
-27. [ ] Timer/Counter — tự tạo `millis()`, PWM bằng thanh ghi
-28. [ ] ADC bằng thanh ghi
-29. [ ] UART bằng thanh ghi (tự viết `Serial`)
-30. [ ] I2C / SPI cấp thấp
-31. [ ] Tiết kiệm năng lượng, watchdog
-32. [ ] Lập trình AVR thuần (không dùng Arduino framework), đọc datasheet
+35. [ ] Bên trong `digitalWrite`: thanh ghi `DDRx`, `PORTx`, `PINx`, phép toán bit *(đã soạn, tạm hoãn)*
+36. [ ] Ngắt ngoài (INT0/INT1), `volatile`, ISR
+37. [ ] Timer/Counter — tự tạo `millis()`, PWM bằng thanh ghi
+38. [ ] ADC bằng thanh ghi
+39. [ ] UART bằng thanh ghi (tự viết `Serial`)
+40. [ ] I2C / SPI cấp thấp
+41. [ ] Tiết kiệm năng lượng, watchdog
+42. [ ] Lập trình AVR thuần (không dùng Arduino framework), đọc datasheet

@@ -22,7 +22,7 @@ Bấm 1 phím = nối 1 hàng với 1 cột. Quét cả 4 hàng chỉ mất vài
 - **Chuỗi ký tự trong C:** mảng `char` kết thúc bằng `'\0'`; `strlen`, `strcmp`, `strcpy`, `snprintf` — thao tác chuỗi không dùng `String` của Arduino để tránh phân mảnh RAM.
 - **Bảo mật cơ bản:** giới hạn số lần thử sai + khóa tạm (chống dò mã — *brute force*); không hiện mã khi nhập (`****`). Hệ thống thật còn lưu mã dạng **băm (hash)**, không lưu mã gốc, và so sánh trong thời gian cố định để chống tấn công đo thời gian.
 - **`static` trong hàm:** biến giữ giá trị giữa các lần gọi mà không cần khai báo toàn cục.
-- **Quét bằng ngắt:** sản phẩm chạy pin không quét liên tục, mà để tất cả hàng LOW, bật ngắt thay đổi chân trên các cột (bài 26) → có phím nhấn mới thức dậy quét — tiết kiệm điện.
+- **Quét bằng ngắt:** sản phẩm chạy pin không quét liên tục, mà để tất cả hàng LOW, bật ngắt thay đổi chân trên các cột (bài 36) → có phím nhấn mới thức dậy quét — tiết kiệm điện.
 
 ## Dự án thực tế
 - **Khóa cửa căn hộ thông minh:** bàn phím cảm ứng + thẻ RFID (bài 22) + vân tay, chạy pin AA cả năm nhờ ngủ sâu và đánh thức bằng ngắt.

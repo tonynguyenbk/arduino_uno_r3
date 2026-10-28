@@ -8,7 +8,7 @@
 
 ## Kiến thức của bài trong hệ thống nhúng
 - **Đo thời gian bay (time of flight):** phát tín hiệu, đo thời gian quay về, nhân vận tốc. Cùng nguyên lý với **radar** ô tô tự lái (sóng vô tuyến), **LiDAR** (ánh sáng laser), máy đo độ sâu đáy biển (sonar), và cảm biến ToF trong camera điện thoại.
-- **Đo độ rộng xung:** `pulseIn()` chờ bằng vòng lặp, chặn CPU tới 30ms. Firmware chuyên nghiệp dùng **Input Capture của Timer** (bài 27): phần cứng tự ghi lại thời điểm cạnh lên/xuống, CPU rảnh làm việc khác.
+- **Đo độ rộng xung:** `pulseIn()` chờ bằng vòng lặp, chặn CPU tới 30ms. Firmware chuyên nghiệp dùng **Input Capture của Timer** (bài 37): phần cứng tự ghi lại thời điểm cạnh lên/xuống, CPU rảnh làm việc khác.
 - **Bù sai số môi trường:** tốc độ âm thanh đổi theo nhiệt độ (~0.6 m/s mỗi độ C). Thiết bị đo chính xác đo thêm nhiệt độ (bài 11) để hiệu chỉnh.
 
 ## Dự án thực tế

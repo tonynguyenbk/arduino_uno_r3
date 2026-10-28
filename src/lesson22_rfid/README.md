@@ -24,7 +24,7 @@
 - **Quản lý kho, chống trộm hàng hóa** (tem RFID dán trên sản phẩm), thẻ ETC thu phí không dừng trên ô tô (RFID tần số UHF, đọc xa hàng mét).
 
 ## Kiến thức của bài trong hệ thống nhúng
-- **SPI:** 4 dây, có dây nhịp riêng (SCK), gửi và nhận **cùng lúc** (full-duplex), nhanh (RC522 tới 10MHz). Mỗi thiết bị thêm chỉ cần 1 chân SS riêng. So với I2C (bài 12): nhanh hơn, tốn chân hơn, không cần địa chỉ. Bài 30 sẽ điều khiển SPI bằng thanh ghi.
+- **SPI:** 4 dây, có dây nhịp riêng (SCK), gửi và nhận **cùng lúc** (full-duplex), nhanh (RC522 tới 10MHz). Mỗi thiết bị thêm chỉ cần 1 chân SS riêng. So với I2C (bài 12): nhanh hơn, tốn chân hơn, không cần địa chỉ. Bài 40 sẽ điều khiển SPI bằng thanh ghi.
 - **Mức điện áp logic:** RC522 dùng 3.3V, Arduino Uno dùng 5V. Cấp nguồn 3.3V là bắt buộc; chân tín hiệu thường vẫn chạy được trong thực tế nhưng thiết kế chuẩn phải có **mạch chuyển mức (level shifter)**. Vấn đề rất phổ biến khi ghép linh kiện hiện đại (đa số chạy 3.3V hoặc 1.8V).
 - **EEPROM:** bộ nhớ 1KB giữ dữ liệu khi mất điện — lưu cấu hình, danh sách thẻ, số lần dùng. Mỗi ô chỉ chịu ~100.000 lần ghi → dùng `EEPROM.update()` (chỉ ghi khi khác) và tránh ghi liên tục trong `loop()`.
 - **Bố cục dữ liệu bền vững:** byte dấu hiệu (biết EEPROM đã được khởi tạo chưa), byte số lượng, rồi mảng dữ liệu — kiểu tổ chức giống hệ thống file thu nhỏ.

@@ -10,7 +10,7 @@ Bảng mạch đỏ có các **vạch đồng song song**, xen kẽ vạch nối
 - **Máy pha cà phê, máy tạo ẩm, bể cá:** báo hết nước.
 
 ## Kiến thức của bài trong hệ thống nhúng
-- **Cấp nguồn theo nhu cầu (power gating):** chỉ bật cảm biến lúc đo — vừa chống ăn mòn, vừa **tiết kiệm điện** cho thiết bị chạy pin (bài 31). Dùng chân GPIO cấp nguồn được vì cảm biến chỉ cần vài mA; tải lớn hơn thì dùng transistor/MOSFET.
+- **Cấp nguồn theo nhu cầu (power gating):** chỉ bật cảm biến lúc đo — vừa chống ăn mòn, vừa **tiết kiệm điện** cho thiết bị chạy pin (bài 41). Dùng chân GPIO cấp nguồn được vì cảm biến chỉ cần vài mA; tải lớn hơn thì dùng transistor/MOSFET.
 - **Độ trễ (hysteresis):** ngưỡng lên khác ngưỡng xuống → tránh trạng thái "nhảy qua lại" khi giá trị dao động quanh ngưỡng. Có ở bộ điều nhiệt điều hòa, tủ lạnh, phao bơm nước, cổng Schmitt trigger (bài 4).
 - **Lượng tử hóa thành các mức:** giá trị liên tục 0–1023 → 4 mức rời rạc dễ hiểu cho người dùng.
 - **Cảm biến công nghiệp tốt hơn:** cảm biến điện dung (không chạm nước, không ăn mòn), phao từ, cảm biến áp suất thủy tĩnh, siêu âm (bài 10), radar.
