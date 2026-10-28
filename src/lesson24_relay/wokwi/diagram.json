@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "author": "tonynguyenbk",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-membrane-keypad", "id": "keypad1", "top": -250, "left": 420, "attrs": {} },
+    { "type": "wokwi-lcd1602", "id": "lcd1", "top": -400, "left": 300, "attrs": { "pins": "i2c" } },
+    { "type": "wokwi-buzzer", "id": "bz1", "top": 10, "left": 300, "attrs": { "volume": "0.1" } },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": 300, "left": 300, "attrs": {} },
+    { "type": "wokwi-led", "id": "khoa", "top": 300, "left": 560, "attrs": { "color": "yellow", "label": "Khoa dien tu" } },
+    { "type": "wokwi-pushbutton", "id": "nutTrong", "top": 290, "left": 40, "attrs": { "color": "green", "label": "Mo tu ben trong" } }
+  ],
+  "connections": [
+    [ "uno:9", "keypad1:R1", "red", [ "h286.9" ] ],
+    [ "uno:8", "keypad1:R2", "orange", [ "h296.9" ] ],
+    [ "uno:7", "keypad1:R3", "gold", [ "h306.4" ] ],
+    [ "uno:6", "keypad1:R4", "green", [ "h315.9" ] ],
+    [ "uno:5", "keypad1:C1", "blue", [ "h325.4" ] ],
+    [ "uno:4", "keypad1:C2", "purple", [ "h334.9" ] ],
+    [ "uno:3", "keypad1:C3", "gray", [ "h344.65" ] ],
+    [ "uno:2", "keypad1:C4", "white", [ "h354.4" ] ],
+
+    [ "uno:A5.2", "lcd1:SCL", "blue", [ "h26.9", "v-394.4" ] ],
+    [ "uno:A4.2", "lcd1:SDA", "green", [ "h36.9", "v-413.9" ] ],
+    [ "uno:GND.1", "lcd1:GND", "black", [ "h46.9", "v-451.4" ] ],
+    [ "uno:5V", "lcd1:VCC", "red", [ "h-30", "v-547.9", "h274.4", "v61.5" ] ],
+
+    [ "uno:10", "bz1:2", "orange", [ "h103.9" ] ],
+    [ "uno:GND.1", "bz1:1", "black", [ "h60", "v20.6", "h33.9" ] ],
+
+    [ "uno:11", "relay1:IN", "cyan", [ "h20", "v220" ] ],
+    [ "uno:5V", "relay1:VCC", "red", [ "h-40", "v200" ] ],
+    [ "uno:GND.3", "relay1:GND", "black", [ "h-25", "v190" ] ],
+    [ "uno:5V", "relay1:COM", "red", [ "h-50", "v240" ] ],
+    [ "relay1:NO", "khoa:A", "gold", [] ],
+    [ "khoa:C", "uno:GND.2", "black", [ "v60", "h-570" ] ],
+
+    [ "uno:12", "nutTrong:1.r", "green", [ "h12", "v190" ] ],
+    [ "nutTrong:2.l", "uno:GND.3", "black", [ "h-20", "v-150" ] ]
+  ],
+  "dependencies": {}
+}

@@ -1,0 +1,7 @@
+# Mô phỏng bài 24 bằng Wokwi. Build env lesson24 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Mã 1234 rồi # để mở khóa. LED vàng = khóa điện từ (được cấp điện qua tiếp điểm relay).
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson24/firmware.hex'
+elf = '../../../.pio/build/lesson24/firmware.elf'

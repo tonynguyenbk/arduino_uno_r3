@@ -43,7 +43,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 21. [x] LED ma trận 8×8 MAX7219 — bộ đệm khung hình, phông chữ `PROGMEM`, chữ chạy *(mô phỏng ✓, chưa cắm thật)*
 22. [x] RFID RC522 + thẻ từ — giao tiếp SPI, UID, EEPROM, khóa cửa thẻ từ *(mô phỏng bằng nút giả lập thẻ, chưa cắm thật — đổi `MO_PHONG = false`)*
 23. [x] Bàn phím ma trận 4×4 — tự viết hàm quét hàng/cột, khóa mật mã, chuỗi C *(mô phỏng ✓, chưa cắm thật)*
-24. [ ] Relay — đóng cắt thiết bị điện, opto cách ly, kích mức cao/thấp, khóa cửa hoàn chỉnh
+24. [x] Relay — đóng cắt thiết bị điện, opto cách ly, kích mức cao/thấp, khóa cửa điện từ *(mô phỏng ✓, chưa cắm thật)*
 
 ### Phần 3 — Nhúng chuyên sâu (AVR ATmega328P)
 25. [ ] Bên trong `digitalWrite`: thanh ghi `DDRx`, `PORTx`, `PINx`, phép toán bit *(đã soạn, tạm hoãn)*
