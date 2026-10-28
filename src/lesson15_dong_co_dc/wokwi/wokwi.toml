@@ -1,0 +1,7 @@
+# Mô phỏng bài 15 bằng Wokwi. Build env lesson15 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Wokwi không có động cơ DC / L298N -> 3 LED hiển thị tín hiệu: ENA (vàng), IN1 (xanh), IN2 (đỏ).
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson15/firmware.hex'
+elf = '../../../.pio/build/lesson15/firmware.elf'

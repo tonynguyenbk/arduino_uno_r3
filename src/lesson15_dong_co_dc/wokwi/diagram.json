@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "tonynguyenbk",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-led", "id": "ledIn2", "top": 0, "left": 300, "attrs": { "color": "red", "label": "IN2" } },
+    { "type": "wokwi-led", "id": "ledIn1", "top": 0, "left": 360, "attrs": { "color": "green", "label": "IN1" } },
+    { "type": "wokwi-led", "id": "ledEna", "top": 0, "left": 420, "attrs": { "color": "yellow", "label": "ENA" } },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 140, "left": -150, "attrs": {} }
+  ],
+  "connections": [
+    [ "uno:8", "ledIn2:A", "red", [ "h91.9" ] ],
+    [ "uno:7", "ledIn1:A", "green", [ "h151.9" ] ],
+    [ "uno:5", "ledEna:A", "gold", [ "h211.9" ] ],
+    [ "uno:GND.1", "ledIn2:C", "black", [ "h20", "v-41.4" ] ],
+    [ "ledIn2:C", "ledIn1:C", "black", [ "v10", "h60" ] ],
+    [ "ledIn1:C", "ledEna:C", "black", [ "v10", "h60" ] ],
+
+    [ "pot1:VCC", "uno:5V", "red", [ "v20", "h111", "v-100.6" ] ],
+    [ "pot1:SIG", "uno:A0", "green", [ "v30", "h111", "v-62.6" ] ],
+    [ "pot1:GND", "uno:GND.2", "black", [ "v40", "h111", "v-111.1" ] ]
+  ],
+  "dependencies": {}
+}

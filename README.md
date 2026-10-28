@@ -34,7 +34,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 12. [x] LCD 1602 / OLED qua I2C — `Wire`, dò địa chỉ I2C, số hex, con trỏ *(mô phỏng ✓, chưa cắm thật)*
 13. [x] Servo SG90 — thư viện Servo, độ dài xung, Timer1 *(mô phỏng ✓, chưa cắm thật)*
 14. [x] Động cơ bước 28BYJ-48 + ULN2003 — thư viện Stepper, vùng chết, `long` *(mô phỏng ✓ với động cơ 200 bước, chưa cắm thật — đổi `BUOC_MOI_VONG` thành 2048)*
-15. [ ] Động cơ DC + L298N
+15. [x] Động cơ DC + L298N — cầu H, PWM tốc độ, tăng/giảm tốc từ từ *(mô phỏng bằng LED, chưa cắm thật)*
 16. [ ] Máy trạng thái (state machine) — dự án tổng hợp
 
 ### Phần 3 — Nhúng chuyên sâu (AVR ATmega328P)
