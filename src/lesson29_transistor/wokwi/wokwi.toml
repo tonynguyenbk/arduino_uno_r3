@@ -1,0 +1,7 @@
+# Mô phỏng bài 29 bằng Wokwi. Build env lesson29 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Wokwi không có transistor: LED đứng thay cho quạt. Vặn biến trở để đổi tốc độ.
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson29/firmware.hex'
+elf = '../../../.pio/build/lesson29/firmware.elf'

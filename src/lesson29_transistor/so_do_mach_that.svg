@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="470" viewBox="0 0 920 470" font-family="Arial, sans-serif" font-size="13">
+  <rect width="920" height="470" fill="#ffffff"/>
+  <style>
+    .w { stroke: #222; stroke-width: 2; fill: none; }
+    .r { stroke: #c62828; stroke-width: 2; fill: none; }
+    .g { stroke: #222; stroke-width: 2; fill: none; }
+    .t { fill: #222; }
+    .h { font-size: 16px; font-weight: bold; fill: #0d47a1; }
+    .n { font-size: 12px; fill: #555; }
+  </style>
+
+  <!-- ================= PANEL 1: NPN ================= -->
+  <text x="20" y="28" class="h">A. Transistor NPN 2N2222 / BC547 — tải nhỏ (≤ 500mA): dải LED, cuộn relay, còi</text>
+
+  <!-- Arduino box -->
+  <rect x="20" y="70" width="110" height="150" rx="6" fill="#00838f"/>
+  <text x="75" y="95" text-anchor="middle" fill="#fff" font-weight="bold">Arduino</text>
+  <text x="120" y="140" text-anchor="end" fill="#fff">chân 9</text>
+  <text x="120" y="205" text-anchor="end" fill="#fff">GND</text>
+
+  <!-- pin9 -> Rb -> base -->
+  <line x1="130" y1="135" x2="170" y2="135" class="w"/>
+  <rect x="170" y="127" width="50" height="16" fill="#f5deb3" stroke="#222"/>
+  <text x="195" y="120" text-anchor="middle" class="t">Rb 330Ω</text>
+  <line x1="220" y1="135" x2="262" y2="135" class="w"/>
+  <!-- transistor symbol -->
+  <circle cx="280" cy="135" r="24" fill="none" stroke="#222" stroke-width="2"/>
+  <line x1="268" y1="120" x2="268" y2="150" stroke="#222" stroke-width="3"/>
+  <line x1="262" y1="135" x2="268" y2="135" class="w"/>
+  <line x1="268" y1="127" x2="290" y2="112" class="w"/>
+  <line x1="268" y1="143" x2="290" y2="158" class="w"/>
+  <polygon points="290,158 280,157 286,149" fill="#222"/>
+  <text x="246" y="152" class="n">B</text>
+  <text x="294" y="108" class="n">C</text>
+  <text x="294" y="170" class="n">E</text>
+  <!-- collector up to load -->
+  <line x1="290" y1="112" x2="290" y2="95" class="w"/>
+  <!-- load -->
+  <rect x="270" y="65" width="40" height="30" fill="#fff59d" stroke="#222"/>
+  <text x="290" y="85" text-anchor="middle" class="t">TẢI</text>
+  <line x1="290" y1="65" x2="290" y2="45" class="r"/>
+  <text x="300" y="50" fill="#c62828">+5V..12V</text>
+  <!-- emitter to GND -->
+  <line x1="290" y1="158" x2="290" y2="200" class="g"/>
+  <line x1="130" y1="200" x2="290" y2="200" class="g"/>
+  <text x="200" y="215" class="n" text-anchor="middle">GND chung</text>
+
+  <text x="340" y="80" class="t">• Dòng nhỏ vào B (vài mA) cho phép dòng lớn C→E (×hFE ≈ 100)</text>
+  <text x="340" y="100" class="t">• Ib = Ic / hFE × 5 (dư để bão hòa) → Rb = (5 − 0.7) / Ib</text>
+  <text x="340" y="120" class="t">   ví dụ tải 200mA: Ib = 10mA → Rb ≈ 430Ω → chọn 330Ω</text>
+  <text x="340" y="140" class="t">• Transistor đặt ở phía GND của tải (low-side) — E nối GND</text>
+  <text x="340" y="160" class="t">• Bão hòa vẫn sụt Vce ≈ 0.2–0.3V → nóng khi dòng lớn</text>
+  <text x="340" y="180" class="t">• Tải là cuộn dây (relay, động cơ): thêm diode như hình B</text>
+
+  <line x1="20" y1="240" x2="900" y2="240" stroke="#bbb" stroke-dasharray="6 4"/>
+
+  <!-- ================= PANEL 2: MOSFET ================= -->
+  <text x="20" y="268" class="h">B. MOSFET kênh N mức logic IRLZ44N — tải lớn (vài A): quạt 12V, động cơ, dải LED dài</text>
+
+  <rect x="20" y="300" width="110" height="150" rx="6" fill="#00838f"/>
+  <text x="75" y="325" text-anchor="middle" fill="#fff" font-weight="bold">Arduino</text>
+  <text x="120" y="370" text-anchor="end" fill="#fff">chân 9 PWM</text>
+  <text x="120" y="435" text-anchor="end" fill="#fff">GND</text>
+
+  <!-- pin9 -> Rg -> gate -->
+  <line x1="130" y1="365" x2="160" y2="365" class="w"/>
+  <rect x="160" y="357" width="50" height="16" fill="#f5deb3" stroke="#222"/>
+  <text x="185" y="350" text-anchor="middle" class="t">220Ω</text>
+  <line x1="210" y1="365" x2="262" y2="365" class="w"/>
+  <!-- pull-down 10k from gate node -->
+  <circle cx="240" cy="365" r="3" fill="#222"/>
+  <line x1="240" y1="365" x2="240" y2="385" class="w"/>
+  <rect x="232" y="385" width="16" height="30" fill="#f5deb3" stroke="#222"/>
+  <text x="224" y="405" text-anchor="end" class="t">10kΩ</text>
+  <line x1="240" y1="415" x2="240" y2="430" class="g"/>
+  <circle cx="240" cy="430" r="3" fill="#222"/>
+  <!-- mosfet symbol -->
+  <line x1="262" y1="350" x2="262" y2="380" stroke="#222" stroke-width="3"/>
+  <line x1="270" y1="345" x2="270" y2="385" stroke="#222" stroke-width="3"/>
+  <line x1="270" y1="350" x2="290" y2="350" class="w"/>
+  <line x1="270" y1="380" x2="290" y2="380" class="w"/>
+  <line x1="270" y1="365" x2="290" y2="365" class="w"/>
+  <polygon points="272,365 282,360 282,370" fill="#222"/>
+  <line x1="290" y1="365" x2="290" y2="380" class="w"/>
+  <text x="250" y="358" class="n">G</text>
+  <text x="296" y="346" class="n">D</text>
+  <text x="296" y="392" class="n">S</text>
+  <!-- drain up to fan -->
+  <line x1="290" y1="350" x2="290" y2="330" class="w"/>
+  <circle cx="290" cy="330" r="3" fill="#222"/>
+  <!-- fan -->
+  <circle cx="290" cy="310" r="18" fill="#e3f2fd" stroke="#222" stroke-width="2"/>
+  <text x="290" y="315" text-anchor="middle" class="t" font-weight="bold">M</text>
+  <line x1="290" y1="292" x2="290" y2="285" class="w"/>
+  <circle cx="290" cy="285" r="3" fill="#222"/>
+  <line x1="290" y1="285" x2="290" y2="278" class="r"/>
+  <text x="300" y="283" fill="#c62828">+12V</text>
+  <!-- flyback diode in parallel with fan -->
+  <line x1="290" y1="285" x2="335" y2="285" class="w"/>
+  <line x1="290" y1="330" x2="335" y2="330" class="w"/>
+  <line x1="335" y1="285" x2="335" y2="298" class="w"/>
+  <line x1="335" y1="317" x2="335" y2="330" class="w"/>
+  <polygon points="325,317 345,317 335,300" fill="#222"/>
+  <line x1="324" y1="298" x2="346" y2="298" stroke="#222" stroke-width="3"/>
+  <text x="352" y="312" class="t">1N4007</text>
+  <!-- source to GND -->
+  <line x1="290" y1="380" x2="290" y2="430" class="g"/>
+  <line x1="130" y1="430" x2="400" y2="430" class="g"/>
+  <text x="400" y="445" class="n" text-anchor="end">GND Arduino = GND nguồn 12V (−)</text>
+
+  <text x="440" y="300" class="t">• MOSFET điều khiển bằng ĐIỆN ÁP ở G, gần như không ăn dòng</text>
+  <text x="440" y="320" class="t">• Phải là loại “logic level” (IRLZ44N, IRL540): mở hẳn ở 5V.</text>
+  <text x="440" y="337" class="t">   IRFZ44N cần 10V → ở 5V mở không hết, nóng cháy</text>
+  <text x="440" y="357" class="t">• 220Ω: hạn dòng nạp tụ cổng G lúc PWM chuyển mức</text>
+  <text x="440" y="377" class="t">• 10kΩ kéo G xuống GND: lúc Arduino reset, chân thả nổi</text>
+  <text x="440" y="394" class="t">   → MOSFET không tự bật quạt</text>
+  <text x="440" y="414" class="t">• Diode: tắt động cơ sinh xung điện áp ngược hàng chục V,</text>
+  <text x="440" y="431" class="t">   diode dẫn xung này về, bảo vệ MOSFET (vạch về phía +12V)</text>
+  <text x="440" y="451" class="t">• Nhiệt: P = I² × Rds(on) = 3² × 0.025 = 0.23W (NPN: 0.9W)</text>
+</svg>
