@@ -1,0 +1,7 @@
+# Mô phỏng bài 31 bằng Wokwi. Build env lesson31 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Nút đỏ: chế độ đèn khách. Nút xanh: chế độ đèn ngủ, giữ 2 giây = tắt hết.
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson31/firmware.hex'
+elf = '../../../.pio/build/lesson31/firmware.elf'

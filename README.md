@@ -53,7 +53,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 30. [x] Bluetooth HC-05 — điều khiển đèn/quạt bằng điện thoại, `SoftwareSerial`, `Stream*`, chia áp 3.3V *(mô phỏng bằng ô Serial, chưa cắm thật — đổi `MO_PHONG = false`)*
 
 ### Kỹ năng tổng hợp
-31. [ ] Tổ chức code nhiều file + class (`.h`/`.cpp`)
+31. [x] Tổ chức code nhiều file + class (`.h`/`.cpp`) — class `NutNhan`, `Den`, `public`/`private`, hàm tạo, tham chiếu, biên dịch & liên kết *(mô phỏng ✓, chưa cắm thật)*
 32. [ ] Nhận lệnh từ máy tính qua Serial — bộ tách lệnh (parser)
 33. [ ] Logic Analyzer — nhìn tận mắt PWM, I2C, SPI, hồng ngoại
 34. [ ] Dự án tổng hợp: nhà thông minh mini

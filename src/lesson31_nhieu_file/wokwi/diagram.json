@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "author": "tonynguyenbk",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-pushbutton-6mm", "id": "nutDo", "top": 81.2, "left": 260, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "khach", "top": 110.9, "left": 320, "rotate": 90, "attrs": { "color": "yellow", "label": "Khach" } },
+    { "type": "wokwi-led", "id": "ngu", "top": 145.9, "left": 380, "rotate": 90, "attrs": { "color": "white", "label": "Ngu" } },
+    { "type": "wokwi-led", "id": "tim", "top": 174.4, "left": 440, "rotate": 90, "attrs": { "color": "red", "label": "Nhip tim" } },
+    { "type": "wokwi-pushbutton-6mm", "id": "nutXanh", "top": 257.8, "left": -88, "attrs": { "color": "blue" } }
+  ],
+  "connections": [
+    [ "uno:GND.1", "nutDo:1.l", "black", [] ],
+    [ "uno:12", "nutDo:2.l", "red", [] ],
+    [ "uno:8", "khach:A", "gold", [] ],
+    [ "uno:5", "ngu:A", "white", [] ],
+    [ "uno:2", "tim:A", "orange", [] ],
+    [ "nutDo:1.r", "khach:C", "black", [ "h25", "v47.5" ] ],
+    [ "nutDo:1.r", "ngu:C", "black", [ "h85", "v82.5" ] ],
+    [ "nutDo:1.r", "tim:C", "black", [ "h145", "v111" ] ],
+
+    [ "uno:A2", "nutXanh:1.r", "blue", [ "h-80.6", "v65.1" ] ],
+    [ "nutXanh:2.l", "uno:GND.3", "black", [ "h-20", "v-131.9" ] ]
+  ],
+  "dependencies": {}
+}
