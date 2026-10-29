@@ -47,7 +47,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 
 25. [x] IC 74HC595 — thanh ghi dịch, mở rộng chân ra, chốt, OE + PWM *(mô phỏng ✓, chưa cắm thật)*
 26. [x] Núm xoay vô cực (rotary encoder) — tín hiệu cầu phương, ngắt `attachInterrupt`, `volatile` *(mô phỏng ✓, chưa cắm thật)*
-27. [ ] Cảm biến chuyển động PIR — đèn tự bật khi có người
+27. [x] Cảm biến chuyển động PIR — đèn hành lang tự động, báo trộm, ISR chỉ đặt cờ *(mô phỏng ✓, chưa cắm thật)*
 28. [ ] Module thời gian thực RTC — ngày giờ, hẹn giờ
 29. [ ] Transistor / MOSFET — tự thiết kế mạch đóng cắt tải lớn
 30. [ ] Bluetooth HC-05 — điều khiển bằng điện thoại, SoftwareSerial

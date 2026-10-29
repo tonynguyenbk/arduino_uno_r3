@@ -1,0 +1,7 @@
+# Mô phỏng bài 27 bằng Wokwi. Build env lesson27 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Bấm vào cảm biến PIR = giả lập có người đi qua. Nút xanh dương = đổi chế độ.
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson27/firmware.hex'
+elf = '../../../.pio/build/lesson27/firmware.elf'

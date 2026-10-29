@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "author": "tonynguyenbk",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-pir-motion-sensor", "id": "pir1", "top": -60, "left": 300, "attrs": { "delayTime": "3" } },
+    { "type": "wokwi-led", "id": "den", "top": 30, "left": -115, "attrs": { "color": "yellow", "label": "Den" } },
+    { "type": "wokwi-buzzer", "id": "coi", "top": 101.4, "left": -127, "attrs": { "volume": "0.1" } },
+    { "type": "wokwi-pushbutton-6mm", "id": "nut", "top": 257.8, "left": -88, "attrs": { "color": "blue" } }
+  ],
+  "connections": [
+    [ "pir1:OUT", "uno:2", "gold", [ "v172.4" ] ],
+    [ "pir1:VCC", "uno:5V", "red", [ "v5", "h-46.2", "v-135", "h-269.4", "v225.9" ] ],
+    [ "pir1:GND", "uno:GND.2", "black", [ "v5", "h44.4", "v-147", "h-390", "v247.4" ] ],
+
+    [ "uno:A0", "den:A", "orange", [ "h-70.6", "v-103.9" ] ],
+    [ "uno:A1", "coi:2", "green", [] ],
+    [ "uno:A2", "nut:1.r", "blue", [ "h-80.6", "v65.1" ] ],
+
+    [ "uno:GND.3", "den:C", "black", [ "h-50.6", "v-146.9", "h-260", "v72" ] ],
+    [ "coi:1", "den:C", "black", [ "h-160", "v-113.4" ] ],
+    [ "nut:2.l", "coi:1", "black", [ "h-172", "v-93.4" ] ]
+  ],
+  "dependencies": {}
+}
