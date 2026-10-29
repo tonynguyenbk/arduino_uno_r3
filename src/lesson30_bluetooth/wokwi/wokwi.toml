@@ -1,0 +1,7 @@
+# Mô phỏng bài 30 bằng Wokwi. Build env lesson30 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Wokwi không có HC-05: gõ lệnh vào ô Serial thay cho điện thoại (vd "khach bat", "quat 60", "K", "3").
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson30/firmware.hex'
+elf = '../../../.pio/build/lesson30/firmware.elf'

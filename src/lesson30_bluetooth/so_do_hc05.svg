@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="340" viewBox="0 0 820 340" font-family="Arial, sans-serif" font-size="13">
+  <rect width="820" height="340" fill="#ffffff"/>
+  <text x="20" y="28" font-size="16" font-weight="bold" fill="#0d47a1">Nối HC-05 với Arduino Uno (SoftwareSerial chân 10, 11)</text>
+
+  <!-- Arduino -->
+  <rect x="20" y="60" width="140" height="240" rx="6" fill="#00838f"/>
+  <text x="90" y="85" text-anchor="middle" fill="#fff" font-weight="bold">Arduino Uno</text>
+  <text x="150" y="115" text-anchor="end" fill="#fff">5V</text>
+  <text x="150" y="155" text-anchor="end" fill="#fff">GND</text>
+  <text x="150" y="195" text-anchor="end" fill="#fff">10 (RX)</text>
+  <text x="150" y="255" text-anchor="end" fill="#fff">11 (TX)</text>
+
+  <!-- HC-05 -->
+  <rect x="560" y="60" width="150" height="240" rx="6" fill="#1565c0"/>
+  <text x="635" y="85" text-anchor="middle" fill="#fff" font-weight="bold">HC-05</text>
+  <text x="570" y="115" fill="#fff">VCC</text>
+  <text x="570" y="155" fill="#fff">GND</text>
+  <text x="570" y="195" fill="#fff">TXD</text>
+  <text x="570" y="255" fill="#fff">RXD (3.3V!)</text>
+  <text x="570" y="285" fill="#cfd8dc" font-size="11">STATE, EN/KEY: không nối</text>
+
+  <!-- 5V -->
+  <line x1="160" y1="110" x2="560" y2="110" stroke="#c62828" stroke-width="2"/>
+  <!-- GND -->
+  <line x1="160" y1="150" x2="560" y2="150" stroke="#222" stroke-width="2"/>
+  <!-- TXD -> pin 10 -->
+  <line x1="160" y1="190" x2="560" y2="190" stroke="#2e7d32" stroke-width="2"/>
+  <polygon points="170,190 182,184 182,196" fill="#2e7d32"/>
+  <text x="360" y="183" text-anchor="middle" fill="#2e7d32">HC-05 gửi → Arduino nhận (3.3V vẫn đọc là HIGH)</text>
+
+  <!-- pin 11 -> 1k -> node -> RXD, node -> 2k -> GND -->
+  <line x1="160" y1="250" x2="250" y2="250" stroke="#ef6c00" stroke-width="2"/>
+  <rect x="250" y="242" width="50" height="16" fill="#f5deb3" stroke="#222"/>
+  <text x="275" y="236" text-anchor="middle">1kΩ</text>
+  <line x1="300" y1="250" x2="560" y2="250" stroke="#ef6c00" stroke-width="2"/>
+  <polygon points="550,250 538,244 538,256" fill="#ef6c00"/>
+  <circle cx="380" cy="250" r="3.5" fill="#222"/>
+  <line x1="380" y1="250" x2="380" y2="270" stroke="#222" stroke-width="2"/>
+  <rect x="372" y="270" width="16" height="36" fill="#f5deb3" stroke="#222"/>
+  <text x="396" y="292">2kΩ</text>
+  <line x1="380" y1="306" x2="380" y2="322" stroke="#222" stroke-width="2"/>
+  <line x1="366" y1="322" x2="394" y2="322" stroke="#222" stroke-width="2"/>
+  <line x1="372" y1="327" x2="388" y2="327" stroke="#222" stroke-width="2"/>
+  <text x="404" y="326" font-size="11">GND</text>
+  <text x="470" y="243" text-anchor="middle" fill="#ef6c00">5V × 2k/(1k+2k) ≈ 3.3V</text>
+
+  <text x="20" y="325" font-size="12" fill="#555">Đèn LED nhỏ trên HC-05: nháy nhanh = chờ ghép đôi; nháy 2 lần rồi nghỉ = đã kết nối.</text>
+</svg>

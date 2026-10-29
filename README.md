@@ -50,7 +50,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 27. [x] Cảm biến chuyển động PIR — đèn hành lang tự động, báo trộm, ISR chỉ đặt cờ *(mô phỏng ✓, chưa cắm thật)*
 28. [x] Module thời gian thực RTC DS1307 — đồng hồ báo thức trên LCD, 2 thiết bị chung bus I2C, `TimeSpan`, lệnh Serial *(mô phỏng ✓, chưa cắm thật)*
 29. [x] Transistor / MOSFET — tự thiết kế mạch đóng cắt tải lớn, quạt 12V điều tốc PWM, kick start, diode dập *(mô phỏng bằng LED, chưa cắm thật)*
-30. [ ] Bluetooth HC-05 — điều khiển bằng điện thoại, SoftwareSerial
+30. [x] Bluetooth HC-05 — điều khiển đèn/quạt bằng điện thoại, `SoftwareSerial`, `Stream*`, chia áp 3.3V *(mô phỏng bằng ô Serial, chưa cắm thật — đổi `MO_PHONG = false`)*
 
 ### Kỹ năng tổng hợp
 31. [ ] Tổ chức code nhiều file + class (`.h`/`.cpp`)

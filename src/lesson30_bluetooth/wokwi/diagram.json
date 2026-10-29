@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "author": "tonynguyenbk",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-led", "id": "khach", "top": 110.9, "left": 280, "rotate": 90, "attrs": { "color": "yellow", "label": "Phong khach" } },
+    { "type": "wokwi-led", "id": "quat", "top": 145.9, "left": 340, "rotate": 90, "attrs": { "color": "blue", "label": "Quat" } },
+    { "type": "wokwi-led", "id": "ngu", "top": 174.4, "left": 400, "rotate": 90, "attrs": { "color": "white", "label": "Phong ngu" } }
+  ],
+  "connections": [
+    [ "uno:8", "khach:A", "gold", [] ],
+    [ "uno:5", "quat:A", "blue", [] ],
+    [ "uno:2", "ngu:A", "white", [] ],
+    [ "uno:GND.1", "khach:C", "black", [ "h39.9", "v47.5" ] ],
+    [ "uno:GND.1", "quat:C", "black", [ "h99.9", "v82.5" ] ],
+    [ "uno:GND.1", "ngu:C", "black", [ "h159.9", "v111" ] ]
+  ],
+  "dependencies": {}
+}
