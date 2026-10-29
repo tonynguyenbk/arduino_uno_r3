@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "author": "tonynguyenbk",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-74hc595", "id": "sr1", "top": 150, "left": 330, "attrs": {} },
+    { "type": "wokwi-led-bar-graph", "id": "den8", "top": 190, "left": 520, "attrs": { "color": "lime" } }
+  ],
+  "connections": [
+    [ "uno:A4.2", "sr1:MR", "purple", [ "h167.8" ] ],
+    [ "uno:13", "sr1:SHCP", "orange", [ "h158.2" ] ],
+    [ "uno:12", "sr1:STCP", "blue", [ "h148.6" ] ],
+    [ "uno:11", "sr1:OE", "gray", [ "h139" ] ],
+    [ "uno:10", "sr1:DS", "green", [ "h129.4" ] ],
+    [ "uno:5V", "sr1:VCC", "red", [ "h-30.6", "v152.1", "h316", "v-129.6" ] ],
+
+    [ "sr1:Q7", "den8:A1", "lime", [ "v22.4" ] ],
+    [ "sr1:Q6", "den8:A2", "lime", [ "v32" ] ],
+    [ "sr1:Q5", "den8:A3", "lime", [ "v41.6" ] ],
+    [ "sr1:Q4", "den8:A4", "lime", [ "v51.2" ] ],
+    [ "sr1:Q3", "den8:A5", "lime", [ "v60.8" ] ],
+    [ "sr1:Q2", "den8:A6", "lime", [ "v70.4" ] ],
+    [ "sr1:Q1", "den8:A7", "lime", [ "v80" ] ],
+    [ "sr1:Q0", "den8:A8", "lime", [ "v-5", "h-27.9", "v126.6" ] ],
+
+    [ "sr1:GND", "den8:C1", "black", [ "h174.5", "v22.4" ] ],
+    [ "den8:C1", "den8:C2", "black", [] ],
+    [ "den8:C2", "den8:C3", "black", [] ],
+    [ "den8:C3", "den8:C4", "black", [] ],
+    [ "den8:C4", "den8:C5", "black", [] ],
+    [ "den8:C5", "den8:C6", "black", [] ],
+    [ "den8:C6", "den8:C7", "black", [] ],
+    [ "den8:C7", "den8:C8", "black", [] ],
+    [ "den8:C8", "uno:GND.3", "black", [ "h10", "v28", "h-589.4", "v-153.1" ] ]
+  ],
+  "dependencies": {}
+}

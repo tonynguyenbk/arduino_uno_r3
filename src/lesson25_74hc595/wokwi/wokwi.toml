@@ -1,0 +1,7 @@
+# Mô phỏng bài 25 bằng Wokwi. Build env lesson25 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Thanh 10 LED: dùng 8 LED đầu nối Q0..Q7 (mạch thật: 8 LED rời, mỗi LED 1 điện trở 220Ω).
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson25/firmware.hex'
+elf = '../../../.pio/build/lesson25/firmware.elf'

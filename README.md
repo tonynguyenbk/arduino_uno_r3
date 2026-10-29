@@ -45,7 +45,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 23. [x] Bàn phím ma trận 4×4 — tự viết hàm quét hàng/cột, khóa mật mã, chuỗi C *(mô phỏng ✓, chưa cắm thật)*
 24. [x] Relay — đóng cắt thiết bị điện, opto cách ly, kích mức cao/thấp, khóa cửa điện từ *(mô phỏng ✓, chưa cắm thật)*
 
-25. [ ] IC 74HC595 — thanh ghi dịch, mở rộng chân ra
+25. [x] IC 74HC595 — thanh ghi dịch, mở rộng chân ra, chốt, OE + PWM *(mô phỏng ✓, chưa cắm thật)*
 26. [ ] Núm xoay vô cực (rotary encoder) — tín hiệu cầu phương, đếm vị trí
 27. [ ] Cảm biến chuyển động PIR — đèn tự bật khi có người
 28. [ ] Module thời gian thực RTC — ngày giờ, hẹn giờ
