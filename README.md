@@ -46,7 +46,7 @@ Chạy mô phỏng (cần extension Wokwi Simulator): build env của bài → `
 24. [x] Relay — đóng cắt thiết bị điện, opto cách ly, kích mức cao/thấp, khóa cửa điện từ *(mô phỏng ✓, chưa cắm thật)*
 
 25. [x] IC 74HC595 — thanh ghi dịch, mở rộng chân ra, chốt, OE + PWM *(mô phỏng ✓, chưa cắm thật)*
-26. [ ] Núm xoay vô cực (rotary encoder) — tín hiệu cầu phương, đếm vị trí
+26. [x] Núm xoay vô cực (rotary encoder) — tín hiệu cầu phương, ngắt `attachInterrupt`, `volatile` *(mô phỏng ✓, chưa cắm thật)*
 27. [ ] Cảm biến chuyển động PIR — đèn tự bật khi có người
 28. [ ] Module thời gian thực RTC — ngày giờ, hẹn giờ
 29. [ ] Transistor / MOSFET — tự thiết kế mạch đóng cắt tải lớn
