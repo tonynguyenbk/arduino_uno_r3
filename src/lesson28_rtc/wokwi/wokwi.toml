@@ -1,0 +1,7 @@
+# Mô phỏng bài 28 bằng Wokwi. Build env lesson28 trước (nút ✓ của PlatformIO),
+# sau đó: Ctrl+Shift+P -> "Wokwi: Select Config File" -> chọn file này -> "Wokwi: Start Simulator".
+# Gõ lệnh vào ô Serial: "A 07:30" (đặt báo thức), "T 2026-10-30 07:29:50" (chỉnh giờ).
+[wokwi]
+version = 1
+firmware = '../../../.pio/build/lesson28/firmware.hex'
+elf = '../../../.pio/build/lesson28/firmware.elf'
